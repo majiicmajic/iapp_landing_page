@@ -1,0 +1,120 @@
+a {
+  @include transition(0.6s);
+  @include font-height(14, 18);
+  text-decoration: underline;
+  color: $brand-white;
+
+  &:hover,
+  &:focus {
+    color: $brand-red-light;
+    text-decoration: none;
+  }
+
+  &:focus {
+    .no-touch & {
+      outline: none;
+    }
+  }
+}
+
+a:link,
+button {
+  -webkit-tap-highlight-color: rgba($brand-white, 0.35);
+  -moz-tap-highlight-color: rgba($brand-white, 0.35);
+}
+
+button {
+  outline: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  width: auto;
+  min-height: 3.375rem;
+  height: auto;
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  @include transition(0.6s);
+
+  &:focus,
+  &:visited {
+    outline: none;
+    border: none;
+    box-shadow: unset;
+  }
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  user-select: none;
+  pointer-events: none;
+}
+
+.btn {
+  @include transition(0.6s);
+  @include font-height(14, 19);
+  border-radius: 0.25rem;
+  padding: 20px 40px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  background-color: transparent;
+  color: $brand-white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  @include flex-row-center-nowrap;
+  text-align: center;
+  max-width: 100%;
+  box-shadow: 0 0 0 transparent;
+  text-decoration: none;
+
+  @include breakpoint-down(lg) {
+    @include font-height(13, 18);
+  }
+
+  @include breakpoint-down(sm) {
+    @include font-height(12.5, 17);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: none;
+    box-shadow: unset;
+
+    .no-touch & {
+      outline: none;
+      border: none;
+      box-shadow: unset;
+    }
+  }
+}
+
+.btn-md {
+  min-height: 2.875rem;
+  @include font-height(13, 14);
+  padding: toRem(18) toRem(34);
+}
+
+.btn-primary {
+  background-color: $brand-red;
+  color: $brand-white;
+  padding: toRem(20.5) toRem(40);
+
+  &:hover,
+  &:focus {
+    background-color: darken($brand-red, 7%);
+  }
+}
+
+
+.btn-outline {
+  border: toRem(1.5) solid $brand-red;
+  color: $brand-white;
+
+  &:hover,
+  &:focus {
+    border: 0;
+    background-color: $brand-red;
+  }
+}

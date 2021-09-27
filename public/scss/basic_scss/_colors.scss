@@ -1,0 +1,58 @@
+// Application color pallette //
+$brand-red: #F40200;
+$brand-red-dark: #451C1C;
+$brand-red-darker: #271b1b;
+$brand-red-light: #FFEFEF;
+$brand-red-lighter: #FFF1F1;
+$brand-white: #FFFFFF;
+$brand-ash: #FFF6F6;
+$brand-lighter-ash: #AAACAE;
+$brand-black: #0E1319;
+$brand-grey-dark: #29363C;
+$brand-grey-darker: #192124;
+$brand-orange: #F9541F;
+$brand-green: #68A246;
+
+// App Color Pallete
+$app-color: () !default;
+$app-color: map-merge(("brand-red": $brand-red,
+    "brand-red-dark": $brand-red-dark,
+    "brand-red-darker": $brand-red-darker,
+    "brand-red-light": $brand-red-light,
+    "brand-red-lighter": $brand-red-lighter,
+    "brand-white": $brand-white,
+    "brand-ash": $brand-ash,
+    "brand-lighter-ash": $brand-lighter-ash,
+    "brand-black": $brand-black,
+    "brand-grey-dark": $brand-grey-dark,
+    "brand-grey-darker": $brand-grey-darker,
+    "brand-orange": $brand-orange,
+    "brand-green": $brand-green,
+  ),
+  $app-color);
+
+/*------------------------------------*\
+	App Color Palette
+\*------------------------------------*/
+@each $color-name,
+$color in $app-color {
+  .#{$color-name} {
+    color: $color !important;
+  }
+
+  .#{$color-name}-bg {
+    background-color: $color !important;
+  }
+
+  .border-#{$color-name} {
+    border: toRem(1) solid $color !important;
+  }
+
+  .border-top-#{$color-name} {
+    border-top: toRem(1) solid $color !important;
+  }
+
+  .border-bottom-#{$color-name} {
+    border-bottom: toRem(1) solid $color !important;
+  }
+}
