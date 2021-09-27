@@ -1,12 +1,6 @@
 <template>
   <div class="base-layout">
-    <div class="welcome text-center brand-white ifont-28 mgb-10">
-      Welcome to iApp
-    </div>
-
-    <div class="description text-center brand-ash ifont-55 font-weight-700">
-      Coming Soon
-    </div>
+    <router-view />
   </div>
 </template>
 
@@ -26,8 +20,5 @@ export default {
 .base-layout {
   @include flex-column-center;
   height: 100vh;
-
-  .welcome {
-  }
 }
 </style>
