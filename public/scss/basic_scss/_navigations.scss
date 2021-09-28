@@ -52,9 +52,9 @@ button[disabled] {
 
 .btn {
   @include transition(0.6s);
-  @include font-height(14, 19);
+  font-size: toRem(14);
   border-radius: 0.25rem;
-  padding: 20px 40px;
+  padding: toRem(10) toRem(40);
   letter-spacing: 0.05em;
   font-weight: 600;
   background-color: transparent;
@@ -69,11 +69,11 @@ button[disabled] {
   text-decoration: none;
 
   @include breakpoint-down(lg) {
-    @include font-height(13, 18);
+    font-size: toRem(13);
   }
 
   @include breakpoint-down(sm) {
-    @include font-height(12.5, 17);
+    font-size: toRem(12.5);
   }
 
   &:hover,
@@ -90,31 +90,58 @@ button[disabled] {
   }
 }
 
-.btn-md {
-  min-height: 2.875rem;
-  @include font-height(13, 14);
-  padding: toRem(18) toRem(34);
-}
-
 .btn-primary {
   background-color: $brand-red;
   color: $brand-white;
-  padding: toRem(20.5) toRem(40);
 
   &:hover,
   &:focus {
-    background-color: darken($brand-red, 7%);
+    background-color: darken($brand-red, 10%);
   }
 }
 
 
 .btn-outline {
-  border: toRem(1.5) solid $brand-red;
+  border: toRem(2) solid $brand-red;
   color: $brand-white;
 
   &:hover,
   &:focus {
-    border: 0;
+    border: toRem(2) solid $brand-red;
     background-color: $brand-red;
+    color: $brand-white !important;
+  }
+}
+
+.app-download-btn {
+  @include flex-row-start-nowrap;
+  padding: toRem(5.5) toRem(15);
+  @include transition(0.4s);
+  background: $brand-white;
+  padding-right: toRem(20);
+  border-radius: toRem(50);
+  color: $brand-grey-text;
+  cursor: pointer;
+  width: auto;
+
+  &:hover {
+    box-shadow: 0 0 toRem(15) toRem(1) rgba(0, 38, 19, 0.1);
+    transform: translateY(-2.5px);
+  }
+
+  .icon {
+    margin-right: toRem(7);
+    font-size: toRem(20);
+    color: $brand-red;
+  }
+
+  .text-one {
+    @include font-height(10.5, 14);
+    font-weight: normal;
+  }
+
+  .text-two {
+    @include font-height(12.25, 16);
+    font-weight: 700;
   }
 }

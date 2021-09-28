@@ -40,7 +40,7 @@ input[disabled] {
   padding: 1.1875rem 1rem;
   background: $brand-red-lighter;
   color: $brand-grey-darker;
-  border: 0.0625rem solid #CDCDCD;
+  border: 0.0625rem solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 0.25rem !important;
   top: 0;
@@ -265,6 +265,93 @@ label {
 
     @include breakpoint-down(sm) {
       font-size: toRem(12);
+    }
+  }
+}
+
+// CUSTOM SELECT DROPDOWN
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  // min-height: 3.375rem;
+
+  .select-input {
+    border: toRem(2) solid $brand-red;
+    padding: toRem(17) toRem(13);
+    background: transparent;
+    height: auto;
+
+    .placeholder-text {
+      @include font-height(13.5, 15);
+      color: $brand-lighter-ash;
+    }
+
+    .selections {
+      @include flex-row-start-wrap;
+      width: 97.25%;
+
+      .select-text {
+        @include font-height(13.5, 15);
+        text-align: left;
+        color: $brand-ash;
+      }
+    }
+
+    .dropdown-icon {
+      @include center-y;
+      right: toRem(10);
+      font-size: toRem(18);
+      font-weight: 500;
+    }
+  }
+
+  .select-option-wrapper {
+    position: absolute;
+    width: 100%;
+    padding: toRem(4) 0;
+    background: $brand-ash;
+    box-shadow: 0 0.1875rem 0.3125rem rgba(60, 61, 75, 0.1);
+    z-index: 9;
+
+    .no-options {
+      @include font-height(14, 25);
+    }
+
+    .option-scroll-wrapper {
+      overflow: auto;
+      min-height: 7vh;
+      height: auto;
+      max-height: 30vh;
+
+      &::-webkit-scrollbar {
+        width: toRem(5);
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: toRem(5);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: toRem(5);
+        background: $brand-lighter-ash;
+      }
+    }
+
+    .option-row {
+      @include flex-row-between-nowrap;
+      @include font-height(13.5, 19);
+      padding: toRem(7) toRem(18);
+      color: $brand-grey-darker;
+      @include transition(0.4s);
+      margin-bottom: toRem(1);
+      text-align: left;
+      cursor: pointer;
+
+      &:hover {
+        background: $brand-red;
+        color: $brand-ash;
+      }
     }
   }
 }

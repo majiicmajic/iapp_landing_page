@@ -10,6 +10,7 @@ $brand-lighter-ash: #AAACAE;
 $brand-black: #0E1319;
 $brand-grey-dark: #29363C;
 $brand-grey-darker: #192124;
+$brand-grey-text: #575A65;
 $brand-orange: #F9541F;
 $brand-green: #68A246;
 
@@ -26,6 +27,7 @@ $app-color: map-merge(("brand-red": $brand-red,
     "brand-black": $brand-black,
     "brand-grey-dark": $brand-grey-dark,
     "brand-grey-darker": $brand-grey-darker,
+    "brand-grey-text": $brand-grey-text,
     "brand-orange": $brand-orange,
     "brand-green": $brand-green,
   ),
