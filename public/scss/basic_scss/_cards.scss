@@ -1,0 +1,29 @@
+.service-card {
+    padding: toRem(20) toRem(30);
+    @include flex-column-center;
+    border-radius: toRem(20);
+    color: $brand-grey-dark;
+    background: $brand-red-light;
+    position: relative;
+    height: toRem(260);
+    width: 100%;
+
+    img {
+        position: relative;
+        top: toRem(-120);
+    }
+
+    .service-title {
+        position: relative;
+        top: toRem(-80);
+        @include font-height(17, 22);
+        margin-bottom: toRem(10);
+    }
+
+    .service-description {
+        position: relative;
+        top: toRem(-76);
+        @include font-height(15.5, 22);
+        letter-spacing: 0.001em;
+    }
+}

@@ -23,7 +23,7 @@
           <div class="right-section">
             <!-- LOCATION -->
             <div class="select">
-              <icon class="icon icon-map-pin-sm brand-ash"></icon>
+              <div class="icon icon-map-pin-sm brand-ash"></div>
               <!-- SELECT ONE  -->
               <div class="select-one">
                 <select-input
@@ -93,7 +93,7 @@ import selectInput from "@/components/form-build/select-input";
 import footerDetails from "@/components/footer-build/footer-details";
 
 export default {
-  name: "footer",
+  name: "footerBase",
 
   components: {
     selectInput,
@@ -102,10 +102,10 @@ export default {
 
   data: () => ({
     language_entry: "",
-    pre_selected_language: "",
+    pre_selected_language: {},
 
     country_entry: "",
-    pre_selected_country: "",
+    pre_selected_country: {},
 
     languages: [
       {

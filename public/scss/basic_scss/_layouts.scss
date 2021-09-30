@@ -1,3 +1,10 @@
+html,
+body,
+header,
+.full-height {
+  height: 92vh;
+}
+
 .container {
   margin: 0 auto;
 
@@ -15,5 +22,28 @@
 
   @include breakpoint-up(xl) {
     max-width: toRem(1140);
+  }
+}
+
+.intro-column {
+  @include flex-column-center;
+  width: 100%;
+
+  .intro-meta-text {
+    @include font-height(15, 27);
+    text-transform: uppercase;
+    letter-spacing: 0.265em;
+    margin-bottom: toRem(5);
+    text-align: center;
+    color: $brand-ash;
+    font-weight: 500;
+  }
+
+  .intro-title-text {
+    @include font-height(45, 60);
+    margin-bottom: toRem(100);
+    color: $brand-white;
+    text-align: center;
+    font-weight: 800;
   }
 }

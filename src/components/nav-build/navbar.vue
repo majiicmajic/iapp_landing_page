@@ -20,9 +20,32 @@
             </router-link>
 
             <!-- COMPANY  -->
-            <router-link to class="nav-item">
+            <router-link
+              to
+              class="nav-item position-relative"
+              @mouseenter.native="show_dropdown = true"
+              @mouseleave.native="show_dropdown = false"
+            >
               <div class="text">Company</div>
-              <div class="icon chevron icon-chevron-down"></div>
+              <div
+                class="icon chevron icon-chevron-down smooth-transition"
+              ></div>
+
+              <!-- NAV DROPDOWN  -->
+              <div
+                class="nav-dropdown rounded-7 brand-grey-dark-bg index-9 smooth-animation"
+                v-if="show_dropdown"
+              >
+                <div class="inner-wrapper position-relative w-100 h-auto">
+                  <div class="connector"></div>
+
+                  <!-- ANDROID  -->
+                  <router-link to class="nav-item">About</router-link>
+                  <router-link to class="nav-item">Contact Us</router-link>
+                  <router-link to class="nav-item">Affilates</router-link>
+                  <router-link to class="nav-item">Help & FAQ</router-link>
+                </div>
+              </div>
             </router-link>
 
             <!-- PARTNER  -->
@@ -53,6 +76,10 @@
 <script>
 export default {
   name: "navbar",
+
+  data: () => ({
+    show_dropdown: false,
+  }),
 
   mounted() {
     window.onscroll = () => {
@@ -97,10 +124,6 @@ export default {
           padding: 0 toRem(1) toRem(6);
           border-bottom: 0 solid transparent;
 
-          &:hover {
-            border-bottom: toRem(0.75) solid rgba($brand-white, 0.6);
-          }
-
           .text {
             letter-spacing: 0.02em;
             font-size: toRem(16);
@@ -117,6 +140,46 @@ export default {
             margin-left: toRem(8);
             position: relative;
             top: toRem(1.5);
+          }
+
+          &:hover {
+            .icon {
+              transform: rotate(180deg);
+            }
+            border-bottom: toRem(0.75) solid rgba($brand-white, 0.6);
+          }
+
+          .nav-dropdown {
+            position: absolute;
+            padding: toRem(5) 0;
+            top: toRem(42);
+            height: auto;
+            left: -50%;
+            width: toRem(190);
+
+            .connector {
+              position: absolute;
+              border: toRem(1) solid transparent;
+              left: 0;
+              top: toRem(-24);
+              height: toRem(20);
+              width: toRem(110);
+            }
+
+            .nav-item {
+              @include font-height(13.5, 20);
+              @include flex-row-start-nowrap;
+              padding: toRem(10) toRem(18);
+              @include transition(0.4s);
+              align-items: flex-start;
+              color: $brand-ash;
+              width: 100%;
+
+              &:hover {
+                background: rgba(59, 69, 76, 1);
+                border: 0 !important;
+              }
+            }
           }
         }
       }
