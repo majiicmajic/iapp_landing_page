@@ -30,7 +30,7 @@ header,
   width: 100%;
 
   .intro-meta-text {
-    @include font-height(15, 27);
+    @include font-height(15, 26);
     text-transform: uppercase;
     letter-spacing: 0.265em;
     margin-bottom: toRem(5);

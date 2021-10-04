@@ -27,3 +27,43 @@
         letter-spacing: 0.001em;
     }
 }
+
+.process-card {
+    background: $brand-grey-dark;
+    @include flex-column-center;
+    @include transition(0.4s);
+    border-radius: toRem(15);
+    height: toRem(270);
+    padding: toRem(20);
+    width: 30%;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    .avatar {
+        @include square-shape(65);
+        margin-bottom: toRem(28);
+        background: $brand-red;
+
+        .icon {
+            @include center-placement;
+            font-size: toRem(30);
+            color: $brand-white;
+        }
+    }
+
+    .title-text {
+        @include font-height(20, 36);
+        letter-spacing: 0.008em;
+        margin-bottom: toRem(18);
+        font-weight: 700;
+    }
+
+    .description-text {
+        @include font-height(16.5, 25);
+        letter-spacing: 0.008em;
+        width: 80%;
+    }
+
+}

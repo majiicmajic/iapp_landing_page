@@ -1,0 +1,14 @@
+.floating-circle {
+    border: toRem(1) solid rgba($brand-red, .6);
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.curve-top {
+    position: absolute;
+    height: toRem(340);
+    top: toRem(-20);
+    left: 0;
+    border-radius: 0 0 toRem(70) toRem(70);
+}

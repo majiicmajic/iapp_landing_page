@@ -28,20 +28,53 @@
       </header>
     </div>
 
-    <!-- INTRODUCTION SECTION  -->
+    <!-- SERVICES SECTION  -->
     <service-section />
+
+    <!-- SCALE STATS SECTION  -->
+    <scale-section />
+
+    <!-- PROCESS SECTION  -->
+    <process-section />
+
+    <!-- APPS SECTION -->
+    <apps-section />
+
+    <!-- TEAM SECTION -->
+    <team-section />
+
+    <!-- PERKS SECTION -->
+    <perks-section />
   </div>
 </template>
 
 <script>
 import heroImg from "@/assets/static/home-hero.jpg";
 import serviceSection from "@/components/home-build/service-section";
+import scaleSection from "@/components/home-build/scale-section";
 
 export default {
   name: "home",
 
   components: {
     serviceSection,
+    scaleSection,
+    processSection: () =>
+      import(
+        /* webpackChunkName: 'processSection' */ "@/components/home-build/process-section"
+      ),
+    appsSection: () =>
+      import(
+        /* webpackChunkName: 'appsSection' */ "@/components/home-build/apps-section"
+      ),
+    teamSection: () =>
+      import(
+        /* webpackChunkName: 'teamSection' */ "@/components/home-build/team-section"
+      ),
+    perksSection: () =>
+      import(
+        /* webpackChunkName: 'perksSection' */ "@/components/home-build/perks-section"
+      ),
   },
 
   data() {

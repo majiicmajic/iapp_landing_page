@@ -6,7 +6,7 @@
     <div class="curve-top w-100 brand-black-bg"></div>
 
     <!-- INTRO COLUMN  -->
-    <div class="intro-column index-99 border-brand-red">
+    <div class="intro-column index-99">
       <!-- META TEXT  -->
       <div class="intro-meta-text">WHO WE ARE</div>
 
@@ -22,7 +22,7 @@
           <div class="col-12 col-sm-6 col-md-3">
             <div class="service-card service-one">
               <!-- SERVICE IMAGE -->
-              <img v-lazy="staticImg('service-one.png')" alt="" />
+              <img :src="staticImg('service-one.png')" alt="" />
 
               <!-- SERVICE TITLE -->
               <div class="service-title text-center font-weight-700">
@@ -40,7 +40,7 @@
           <div class="col-12 col-sm-6 col-md-3">
             <div class="service-card service-two">
               <!-- SERVICE IMAGE -->
-              <img v-lazy="staticImg('service-two.png')" alt="" />
+              <img :src="staticImg('service-two.png')" alt="" />
 
               <!-- SERVICE TITLE -->
               <div class="service-title text-center font-weight-700">
@@ -58,7 +58,7 @@
           <div class="col-12 col-sm-6 col-md-3">
             <div class="service-card service-three">
               <!-- SERVICE IMAGE -->
-              <img v-lazy="staticImg('service-three.png')" alt="" />
+              <img :src="staticImg('service-three.png')" alt="" />
 
               <!-- SERVICE TITLE -->
               <div class="service-title text-center font-weight-700">
@@ -76,7 +76,7 @@
           <div class="col-12 col-sm-6 col-md-3">
             <div class="service-card service-four">
               <!-- SERVICE IMAGE -->
-              <img v-lazy="staticImg('service-four.png')" alt="" />
+              <img :src="staticImg('service-four.png')" alt="" />
 
               <!-- SERVICE TITLE -->
               <div class="service-title text-center font-weight-700">
@@ -105,14 +105,6 @@ export default {
 .service-section {
   @include flex-column-center;
 
-  .curve-top {
-    position: absolute;
-    height: toRem(330);
-    top: toRem(-15);
-    left: 0;
-    border-radius: 0 0 toRem(70) toRem(70);
-  }
-
   .intro-column {
     .intro-title-text {
       width: 30%;
@@ -120,8 +112,8 @@ export default {
   }
 
   .services-row {
-    margin-top: toRem(110);
-    padding-bottom: toRem(120);
+    margin-top: toRem(115);
+    padding-bottom: toRem(125);
   }
 
   .service-one {

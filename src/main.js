@@ -16,14 +16,16 @@ import Meta from "vue-meta";
 import { mixin as clickaway } from "vue-clickaway";
 
 import AOS from "aos";
+import carousel from "vue-owl-carousel";
 import { renderAssets } from "@/service/asset-helper";
 
 Vue.use(Meta);
 Vue.use(VueLazyload);
 Vue.mixin(clickaway);
-
 Vue.mixin(renderAssets);
 AOS.init();
+
+Vue.component("carousel", carousel);
 
 // EVENT BUS
 Vue.prototype.$bus = new Vue();
