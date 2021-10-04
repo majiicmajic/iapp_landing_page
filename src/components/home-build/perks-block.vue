@@ -54,7 +54,7 @@ export default {
       .title-text {
         @include font-height(36, 44);
         margin-bottom: toRem(27);
-        width: 50%;
+        width: 55%;
       }
 
       .description {
