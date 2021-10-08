@@ -103,7 +103,7 @@ export default {
 
 <style lang="scss" scoped>
 .location-section {
-  padding: toRem(130) 0 toRem(30);
+  padding: toRem(130) 0 0;
   @include flex-column-center;
 
   .intro-column {
