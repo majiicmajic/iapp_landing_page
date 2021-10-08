@@ -45,6 +45,15 @@
 
     <!-- PERKS SECTION -->
     <perks-section />
+
+    <!-- POST SECTION -->
+    <post-section />
+
+    <!-- LOCATION SECTION -->
+    <location-section />
+
+    <!-- APP SAMPLE SECTION -->
+    <app-sample-section />
   </div>
 </template>
 
@@ -74,6 +83,18 @@ export default {
     perksSection: () =>
       import(
         /* webpackChunkName: 'perksSection' */ "@/components/home-build/perks-section"
+      ),
+    postSection: () =>
+      import(
+        /* webpackChunkName: 'postSection' */ "@/components/home-build/post-section"
+      ),
+    locationSection: () =>
+      import(
+        /* webpackChunkName: 'locationSection' */ "@/components/home-build/location-section"
+      ),
+    appSampleSection: () =>
+      import(
+        /* webpackChunkName: 'appSampleSection' */ "@/components/home-build/app-sample-section"
       ),
   },
 

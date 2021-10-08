@@ -2,7 +2,7 @@
   <section class="apps-section">
     <div class="container px-0">
       <!-- TOP ROW  -->
-      <div class="top-row">
+      <div class="top-title-row">
         <div class="title-text brand-white text-capitalize">
           Get started with these super apps
         </div>
@@ -64,25 +64,6 @@ export default {
 <style lang="scss" scoped>
 .apps-section {
   padding: toRem(30) 0 toRem(60);
-
-  .top-row {
-    @include flex-row-between-nowrap;
-    margin-bottom: toRem(60);
-
-    .title-text {
-      font-weight: 700;
-      @include font-height(36, 44);
-    }
-
-    .view-link {
-      font-weight: 600;
-      @include font-height(18, 27);
-
-      &:hover {
-        color: $brand-red;
-      }
-    }
-  }
 
   .video-section {
     @include flex-column-center;

@@ -12,3 +12,22 @@
     left: 0;
     border-radius: 0 0 toRem(70) toRem(70);
 }
+
+.top-title-row {
+    @include flex-row-between-nowrap;
+    margin-bottom: toRem(60);
+
+    .title-text {
+        font-weight: 700;
+        @include font-height(36, 44);
+    }
+
+    .view-link {
+        font-weight: 600;
+        @include font-height(18, 27);
+
+        &:hover {
+            color: $brand-red;
+        }
+    }
+}
