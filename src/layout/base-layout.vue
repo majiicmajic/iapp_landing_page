@@ -3,7 +3,9 @@
     <!-- NAVBAR  -->
     <navbar />
 
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
 
     <!-- FOOTER  -->
     <footer-base />

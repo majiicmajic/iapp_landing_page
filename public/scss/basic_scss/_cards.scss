@@ -28,7 +28,8 @@
     }
 }
 
-.process-card {
+.process-card,
+.feature-card {
     background: $brand-grey-dark;
     @include flex-column-center;
     @include transition(0.4s);
@@ -66,4 +67,47 @@
         width: 80%;
     }
 
+}
+
+.feature-card {
+    width: 100%;
+
+    img {
+        margin-top: toRem(-90);
+        margin-bottom: toRem(10);
+    }
+
+    .description-text {
+        width: 90%;
+    }
+}
+
+.app-detail-card {
+    border-radius: toRem(20);
+    padding: toRem(50) toRem(40) toRem(45);
+    height: toRem(540);
+    width: 40%;
+    position: relative;
+    color: $brand-white;
+
+    .title-text {
+        font-weight: 600;
+        @include font-height(34, 38);
+        margin-bottom: toRem(26);
+    }
+
+    .description {
+        @include font-height(18, 26);
+    }
+
+    .get-app {
+        @include font-height(16, 21);
+        position: absolute;
+        bottom: toRem(44);
+    }
+
+    .app-image {
+        position: absolute;
+        right: 0;
+    }
 }

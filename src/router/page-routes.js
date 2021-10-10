@@ -14,6 +14,15 @@ const pageRoutes = [
           guest: true,
         },
       },
+      {
+        path: "/super-apps",
+        name: "superApps",
+        component: () =>
+          import(/* webpackChunkName: "superApps" */ "@/views/super-apps"),
+        meta: {
+          guest: true,
+        },
+      },
     ],
   },
 ];

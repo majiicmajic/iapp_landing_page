@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="home-setup">
+    <div class="hero-setup">
       <header>
         <div
-          class="home-hero full-height"
+          class="hero-layout full-height"
           :style="'background-image:url(' + hero + ')'"
         >
           <!-- OVERLAY COVER BOTTOM -->
@@ -105,62 +105,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.home-setup {
-  margin-bottom: toRem(180);
-
-  .home-hero {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    animation: animated-image 15s ease infinite;
-
-    .overlay {
-      background: linear-gradient(
-          222.36deg,
-          rgba(28, 32, 38, 0.25) 48.17%,
-          rgba(37, 42, 49, 0.4) 120.42%
-        ),
-        linear-gradient(0deg, rgba(34, 56, 56, 0.1), rgba(35, 39, 48, 0.3)),
-        radial-gradient(
-          111.6% 409.22% at 100% 25.67%,
-          rgba(70, 40, 40, 0.4) 14.53%,
-          rgba(49, 17, 17, 0.1) 65.46%
-        );
-    }
-
-    .overlay-cover {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: 9;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      background: linear-gradient(
-        359.61deg,
-        #0e1218 8.24%,
-        rgba(10, 13, 17, 0.1) 76.66%
-      );
-    }
-
-    .content {
-      @include center-y;
-      margin-top: 8vh;
-
-      .hero-title-text {
-        @include font-height(62, 54);
-        letter-spacing: 0.01em;
-        font-weight: 800;
-      }
-
-      .hero-cta-btn {
-        padding: toRem(15) toRem(50);
-        font-size: toRem(16.25);
-        margin-top: toRem(55);
-      }
-    }
-  }
-}
-</style>

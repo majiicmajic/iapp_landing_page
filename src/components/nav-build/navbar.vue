@@ -4,17 +4,27 @@
       <!-- NAV CONTENT  -->
       <div class="nav-content w-100 mx-auto brand-white">
         <!-- BRAND LOGO AND NAME  -->
-        <div class="brand">
+        <router-link
+          :to="{ name: 'Home' }"
+          class="brand"
+          style="text-decoration: none"
+        >
           <img v-lazy="staticImg('iApp-logo.png')" alt="" class="brand-logo" />
-          <div class="brand-name font-weight-900 brand-white mgl-7">App</div>
-        </div>
+          <div class="brand-name font-weight-900 brand-white mgl-7">
+            App
+          </div>
+        </router-link>
 
         <!-- NAV OPTIONS  -->
         <div class="nav-options">
           <!-- NAV MENUS  -->
           <div class="nav-menu">
             <!-- SUPER APPS  -->
-            <router-link to class="nav-item">
+            <router-link
+              :to="{ name: 'superApps' }"
+              class="nav-item"
+              :class="getCurrentPage === 'superApps' ? 'brand-red' : null"
+            >
               <div class="text">Super Apps</div>
               <div class="icon icon-super-app"></div>
             </router-link>
@@ -76,6 +86,12 @@
 <script>
 export default {
   name: "navbar",
+
+  computed: {
+    getCurrentPage() {
+      return this.$route.name;
+    },
+  },
 
   data: () => ({
     show_dropdown: false,
