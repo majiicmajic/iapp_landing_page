@@ -33,6 +33,7 @@
             <router-link
               to
               class="nav-item position-relative"
+              :class="inExclusionList ? 'brand-red' : null"
               @mouseenter.native="show_dropdown = true"
               @mouseleave.native="show_dropdown = false"
             >
@@ -50,8 +51,18 @@
                   <div class="connector"></div>
 
                   <!-- ANDROID  -->
-                  <router-link to class="nav-item">About</router-link>
-                  <router-link to class="nav-item">Contact Us</router-link>
+                  <router-link
+                    :to="{ name: 'about' }"
+                    :class="getCurrentPage === 'about' ? 'brand-red' : null"
+                    class="nav-item"
+                    >About</router-link
+                  >
+                  <router-link
+                    :to="{ name: 'contact' }"
+                    class="nav-item"
+                    :class="getCurrentPage === 'contact' ? 'brand-red' : null"
+                    >Contact Us</router-link
+                  >
                   <router-link to class="nav-item">Affilates</router-link>
                   <router-link to class="nav-item">Help & FAQ</router-link>
                 </div>
@@ -91,10 +102,15 @@ export default {
     getCurrentPage() {
       return this.$route.name;
     },
+
+    inExclusionList() {
+      return this.exclusion_list.includes(this.getCurrentPage) ? true : false;
+    },
   },
 
   data: () => ({
     show_dropdown: false,
+    exclusion_list: ["contact", "about"],
   }),
 
   mounted() {

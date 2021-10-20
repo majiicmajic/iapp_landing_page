@@ -15,10 +15,11 @@ input {
 }
 
 .label-text {
-  @include font-height(12.5, 16);
-  margin-bottom: 0.4375rem;
+  @include font-height(13, 16);
+  margin-bottom: 0.8125rem;
   font-weight: 600;
-  color: $brand-red-darker;
+  // color: $brand-red-darker;
+  color: $brand-lighter-ash;
 }
 
 .helper-text {
@@ -40,7 +41,7 @@ input[disabled] {
   padding: 1.1875rem 1rem;
   background: $brand-red-lighter;
   color: $brand-grey-darker;
-  border: 0.0625rem solid #cdcdcd;
+  border: 0.0625rem solid #e8e8e8;
   box-sizing: border-box;
   border-radius: 0.25rem !important;
   top: 0;
@@ -49,7 +50,7 @@ input[disabled] {
   margin: 0;
   outline: 0;
   width: 100%;
-  min-height: 3.375rem;
+  min-height: 3rem;
   position: relative;
   overflow: hidden;
   text-indent: 0.0006rem;

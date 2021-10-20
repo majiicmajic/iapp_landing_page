@@ -23,6 +23,24 @@ const pageRoutes = [
           guest: true,
         },
       },
+      {
+        path: "/contact",
+        name: "contact",
+        component: () =>
+          import(/* webpackChunkName: "superApps" */ "@/views/contact"),
+        meta: {
+          guest: true,
+        },
+      },
+      {
+        path: "/about",
+        name: "about",
+        component: () =>
+          import(/* webpackChunkName: "superApps" */ "@/views/about"),
+        meta: {
+          guest: true,
+        },
+      },
     ],
   },
 ];
