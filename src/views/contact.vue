@@ -40,6 +40,10 @@ export default {
   mounted() {
     this.$nextTick(() => bgColorSetter("#e5e5e5"));
   },
+
+  beforeDestroy() {
+    bgColorSetter("#0E1319");
+  },
 };
 </script>
 

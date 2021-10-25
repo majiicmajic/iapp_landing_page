@@ -75,7 +75,11 @@
             </router-link>
 
             <!-- BLOG  -->
-            <router-link to class="nav-item">
+            <router-link
+              :to="{ name: 'blog' }"
+              class="nav-item"
+              :class="getCurrentPage === 'blog' ? 'brand-red' : null"
+            >
               <div class="text">Blog</div>
             </router-link>
           </div>

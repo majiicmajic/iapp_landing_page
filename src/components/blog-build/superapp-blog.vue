@@ -1,23 +1,36 @@
 <template>
-  <section class="apps-section">
+  <div class="super-app-blog">
     <div class="container px-0">
-      <!-- TOP ROW  -->
-      <div class="top-title-row">
-        <div class="title-text brand-white text-capitalize">
-          Get started with these super apps
-        </div>
-
-        <router-link to class="view-link smooth-transition"
-          >View All</router-link
-        >
+      <div class="title-text brand-white font-weight-700 mgb-58">
+        Trending topics on the super app
       </div>
 
       <div class="row">
         <!-- APPS COLUMN  -->
         <div class="col-12 col-md-6">
-          <app-card />
-          <app-card />
-          <app-card />
+          <post-excerpt-card
+            :post="{
+              image: 'blog-two.png',
+              count: 'BLOG 01',
+              title: ' Lorem ipsum dolor sit amet, consectetur ',
+            }"
+          />
+
+          <post-excerpt-card
+            :post="{
+              image: 'blog-two.png',
+              count: 'BLOG 01',
+              title: ' Lorem ipsum dolor sit amet, consectetur ',
+            }"
+          />
+
+          <post-excerpt-card
+            :post="{
+              image: 'blog-two.png',
+              count: 'BLOG 01',
+              title: ' Lorem ipsum dolor sit amet, consectetur ',
+            }"
+          />
         </div>
 
         <!-- APP VIDEO  -->
@@ -46,23 +59,27 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
-import appCard from "@/components/home-build/app-card";
+import postExcerptCard from "@/components/blog-build/post-excerpt-card";
 
 export default {
-  name: "appsSection",
+  name: "superAppBlog",
 
   components: {
-    appCard,
+    postExcerptCard,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.apps-section {
-  padding: toRem(30) 0 toRem(60);
+.super-app-blog {
+  padding: toRem(110) 0;
+
+  .title-text {
+    @include font-height(34, 50);
+  }
 }
 </style>

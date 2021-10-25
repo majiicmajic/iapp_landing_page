@@ -313,3 +313,33 @@ BOX SIZES
     background-position: 0% 50%;
   }
 }
+
+// VIDEO SECTION 
+.video-section {
+  @include flex-column-center;
+
+  .video-cover {
+    @include rectangle-shape(480, 345);
+    transform: rotate(10.49deg);
+  }
+
+  .video-player {
+    @include rectangle-shape(480, 345);
+    @include center-y;
+
+    img {
+      @include background-cover;
+    }
+  }
+
+  .play-icon {
+    @include center-y;
+    @include square-shape(86);
+
+    .icon {
+      @include center-placement;
+      margin-left: toRem(3.5);
+      font-size: toRem(35);
+    }
+  }
+}
