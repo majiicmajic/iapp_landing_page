@@ -19,7 +19,7 @@
       </div>
 
       <!-- META INFO  -->
-      <div class="meta-info">
+      <div class="meta-info" v-if="show_bottom">
         <!-- AUTHOR  -->
         <div class="author">
           <div class="avatar author-image">
@@ -42,6 +42,10 @@ export default {
 
   props: {
     image: String,
+    show_bottom: {
+      type: Boolean,
+      default: true,
+    },
   },
 };
 </script>

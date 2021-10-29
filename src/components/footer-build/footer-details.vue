@@ -71,10 +71,14 @@
       <div class="link-column">
         <div class="link-title">Company</div>
 
-        <router-link to class="link-text">About Us</router-link>
-        <router-link to class="link-text">Blog</router-link>
+        <router-link :to="{ name: 'about' }" class="link-text"
+          >About Us</router-link
+        >
+        <router-link :to="{ name: 'blog' }" class="link-text">Blog</router-link>
         <router-link to class="link-text">Affiliates</router-link>
-        <router-link to class="link-text">Contact Us</router-link>
+        <router-link :to="{ name: 'contact' }" class="link-text"
+          >Contact Us</router-link
+        >
       </div>
 
       <!-- SUPPORT  -->
@@ -82,17 +86,27 @@
         <div class="link-title">Support</div>
 
         <router-link to class="link-text">Login/Sign Up</router-link>
-        <router-link to class="link-text">Help Center</router-link>
-        <router-link to class="link-text">Super Apps</router-link>
+        <router-link :to="{ name: 'helpCenter' }" class="link-text"
+          >Help Center</router-link
+        >
+        <router-link :to="{ name: 'superApps' }" class="link-text"
+          >Super Apps</router-link
+        >
       </div>
 
       <!-- LEGAL  -->
       <div class="link-column">
         <div class="link-title">Legal</div>
 
-        <router-link to class="link-text">Partner With Us</router-link>
-        <router-link to class="link-text">Privacy Policy</router-link>
-        <router-link to class="link-text">Terms of Service</router-link>
+        <router-link :to="{ name: 'partner' }" class="link-text"
+          >Partner With Us</router-link
+        >
+        <router-link :to="{ name: 'privacy' }" class="link-text"
+          >Privacy Policy</router-link
+        >
+        <router-link :to="{ name: 'terms' }" class="link-text"
+          >Terms of Service</router-link
+        >
       </div>
     </div>
   </div>

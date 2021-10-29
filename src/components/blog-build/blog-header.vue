@@ -7,9 +7,6 @@
           What’s trending on iApp?
         </div>
       </div>
-
-      <!-- BLOG SECTION -->
-      <div class="blog-section"></div>
     </div>
   </div>
 </template>
@@ -23,14 +20,9 @@ export default {
 <style lang="scss" scoped>
 .blog-header {
   .page-title {
-    margin: 25vh 0 toRem(82);
+    margin: 22vh 0 toRem(120);
     @include font-height(58, 70);
     width: 40%;
-  }
-
-  .blog-section {
-    @include flex-row-between-nowrap;
-    align-items: flex-start;
   }
 }
 </style>

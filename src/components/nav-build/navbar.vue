@@ -64,13 +64,24 @@
                     >Contact Us</router-link
                   >
                   <router-link to class="nav-item">Affilates</router-link>
-                  <router-link to class="nav-item">Help & FAQ</router-link>
+                  <router-link
+                    :to="{ name: 'helpCenter' }"
+                    class="nav-item"
+                    :class="
+                      getCurrentPage === 'helpCenter' ? 'brand-red' : null
+                    "
+                    >Help & FAQ</router-link
+                  >
                 </div>
               </div>
             </router-link>
 
             <!-- PARTNER  -->
-            <router-link to class="nav-item">
+            <router-link
+              :to="{ name: 'partner' }"
+              class="nav-item"
+              :class="getCurrentPage === 'partner' ? 'brand-red' : null"
+            >
               <div class="text">Partner With Us</div>
             </router-link>
 

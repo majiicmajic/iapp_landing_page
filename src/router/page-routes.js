@@ -49,6 +49,42 @@ const pageRoutes = [
           guest: true,
         },
       },
+      {
+        path: "/help-center",
+        name: "helpCenter",
+        component: () =>
+          import(/* webpackChunkName: "blog" */ "@/views/help-center"),
+        meta: {
+          guest: true,
+        },
+      },
+      {
+        path: "/partner",
+        name: "partner",
+        component: () =>
+          import(/* webpackChunkName: "blog" */ "@/views/partners"),
+        meta: {
+          guest: true,
+        },
+      },
+      {
+        path: "/privacy",
+        name: "privacy",
+        component: () =>
+          import(/* webpackChunkName: "privacy" */ "@/views/privacy"),
+        meta: {
+          guest: true,
+        },
+      },
+      {
+        path: "/terms",
+        name: "terms",
+        component: () =>
+          import(/* webpackChunkName: "terms" */ "@/views/terms"),
+        meta: {
+          guest: true,
+        },
+      },
     ],
   },
 ];
