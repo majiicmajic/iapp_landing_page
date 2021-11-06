@@ -8,6 +8,15 @@
     height: toRem(260);
     width: 100%;
 
+    @include breakpoint-down(xl) {
+        height: toRem(220);
+    }
+
+    @include breakpoint-down(md) {
+        margin-top: toRem(10);
+        margin-bottom: toRem(60);
+    }
+
     img {
         position: relative;
         top: toRem(-120);
@@ -18,6 +27,15 @@
         top: toRem(-80);
         @include font-height(17, 22);
         margin-bottom: toRem(10);
+
+        @include breakpoint-down(xl) {
+            @include font-height(15, 21);
+        }
+
+        @include breakpoint-down(md) {
+            top: toRem(-50);
+            @include font-height(15, 21);
+        }
     }
 
     .service-description {
@@ -25,6 +43,16 @@
         top: toRem(-76);
         @include font-height(15.5, 22);
         letter-spacing: 0.001em;
+
+        @include breakpoint-down(xl) {
+            @include font-height(14, 20);
+            letter-spacing: unset;
+        }
+
+        @include breakpoint-down(md) {
+            top: toRem(-46);
+            @include font-height(13.5, 20);
+        }
     }
 }
 
@@ -36,7 +64,21 @@
     border-radius: toRem(15);
     height: toRem(270);
     padding: toRem(20);
-    width: 30%;
+    width: 100%;
+
+    @include breakpoint-down(lg) {
+        margin-bottom: toRem(30);
+    }
+
+    @include breakpoint-down(md) {
+        height: toRem(250);
+        margin-bottom: toRem(60);
+    }
+
+    @include breakpoint-down(sm) {
+        height: toRem(230);
+        margin-bottom: toRem(40);
+    }
 
     &:hover {
         transform: scale(1.02);
@@ -47,10 +89,19 @@
         margin-bottom: toRem(28);
         background: $brand-red;
 
+        @include breakpoint-down(sm) {
+            margin-bottom: toRem(18);
+            @include square-shape(54);
+        }
+
         .icon {
             @include center-placement;
             font-size: toRem(30);
             color: $brand-white;
+
+            @include breakpoint-down(sm) {
+                font-size: toRem(25);
+            }
         }
     }
 
@@ -59,12 +110,29 @@
         letter-spacing: 0.008em;
         margin-bottom: toRem(18);
         font-weight: 700;
+
+        @include breakpoint-down(xl) {
+            @include font-height(18, 33);
+        }
+
+        @include breakpoint-down(sm) {
+            margin-bottom: toRem(13);
+            @include font-height(15.5, 28);
+        }
     }
 
     .description-text {
         @include font-height(16.5, 25);
         letter-spacing: 0.008em;
         width: 80%;
+
+        @include breakpoint-down(xl) {
+            @include font-height(15, 22);
+        }
+
+        @include breakpoint-down(sm) {
+            @include font-height(12.5, 21);
+        }
     }
 
 }

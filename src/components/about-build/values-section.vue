@@ -1,15 +1,31 @@
 <template>
   <div class="values-section">
-    <div class="container px-0">
+    <div class="container px-3 px-sm-4 px-xl-0">
       <!-- INTRO COLUMN  -->
       <div class="intro-column index-99">
         <!-- TITLE TEXT  -->
-        <div class="intro-title-text">Our Core Values</div>
+        <div
+          class="intro-title-text"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Our Core Values
+        </div>
       </div>
 
       <div class="row">
         <div class="col-12 col-md-4">
-          <div class="feature-card">
+          <div
+            class="feature-card"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="120"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <img :src="staticImg('value-one.png')" alt="" class="img-one" />
 
             <!-- TITLE TEXT -->
@@ -26,7 +42,14 @@
         </div>
 
         <div class="col-12 col-md-4">
-          <div class="feature-card">
+          <div
+            class="feature-card"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="120"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <img :src="staticImg('value-two.png')" alt="" class="img-two" />
 
             <!-- TITLE TEXT -->
@@ -43,7 +66,14 @@
         </div>
 
         <div class="col-12 col-md-4">
-          <div class="feature-card">
+          <div
+            class="feature-card"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="120"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <img :src="staticImg('value-three.png')" alt="" class="img-three" />
 
             <!-- TITLE TEXT -->

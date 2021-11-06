@@ -318,14 +318,75 @@ BOX SIZES
 .video-section {
   @include flex-column-center;
 
+  @include breakpoint-down(md) {
+    position: relative;
+    top: 110px;
+  }
+
   .video-cover {
     @include rectangle-shape(480, 345);
     transform: rotate(10.49deg);
+
+    @include breakpoint-down(xl) {
+      @include rectangle-shape(420, 275);
+    }
+
+    @include breakpoint-down(lg) {
+      @include rectangle-shape(370, 255);
+    }
+
+    @include breakpoint-down(md) {
+      @include rectangle-shape(460, 295);
+    }
+
+    @include breakpoint-down(sm) {
+      @include rectangle-shape(410, 260);
+    }
+
+    @include breakpoint-down(xs) {
+      @include rectangle-shape(360, 230);
+    }
+
+    @include breakpoint-custom-down(410) {
+      @include rectangle-shape(300, 180);
+    }
+
+    @include breakpoint-custom-down(330) {
+      @include rectangle-shape(280, 170);
+    }
   }
 
   .video-player {
     @include rectangle-shape(480, 345);
     @include center-y;
+
+    @include breakpoint-down(xl) {
+      @include rectangle-shape(420, 275);
+    }
+
+    @include breakpoint-down(lg) {
+      @include rectangle-shape(370, 255);
+    }
+
+    @include breakpoint-down(md) {
+      @include rectangle-shape(460, 295);
+    }
+
+    @include breakpoint-down(sm) {
+      @include rectangle-shape(410, 260);
+    }
+
+    @include breakpoint-down(xs) {
+      @include rectangle-shape(360, 230);
+    }
+
+    @include breakpoint-custom-down(410) {
+      @include rectangle-shape(300, 180);
+    }
+
+    @include breakpoint-custom-down(330) {
+      @include rectangle-shape(280, 170);
+    }
 
     img {
       @include background-cover;
@@ -336,10 +397,26 @@ BOX SIZES
     @include center-y;
     @include square-shape(86);
 
+    @include breakpoint-down(xl) {
+      @include square-shape(75);
+    }
+
+    @include breakpoint-down(xs) {
+      @include square-shape(54);
+    }
+
     .icon {
       @include center-placement;
       margin-left: toRem(3.5);
       font-size: toRem(35);
+
+      @include breakpoint-down(xl) {
+        font-size: toRem(30);
+      }
+
+      @include breakpoint-down(xs) {
+        font-size: toRem(20);
+      }
     }
   }
 }

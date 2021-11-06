@@ -10,16 +10,30 @@
           <div class="overlay-cover"></div>
 
           <!-- CONTENT  -->
-          <div class="container px-0 position-relative h-100">
+          <div class="container px-3 px-sm-4 px-xl-0 position-relative h-100">
             <div class="content index-99">
-              <div class="hero-title-text brand-white">
+              <div
+                class="hero-title-text brand-white"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <p>5 countries.</p>
                 <p>25+ products.</p>
                 <p>1 super app.</p>
               </div>
 
               <!-- CALL TO ACTION BUTTON  -->
-              <button class="btn btn-primary hero-cta-btn">
+              <button
+                class="btn btn-primary hero-cta-btn"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="120"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 Get The Super App
               </button>
             </div>

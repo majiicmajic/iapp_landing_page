@@ -1,6 +1,6 @@
 <template>
   <div class="privacy-page">
-    <div class="container px-0">
+    <div class="container px-3 px-sm-4 px-xl-0">
       <!-- PAGE TITLE -->
       <div class="d-flex justify-content-center">
         <div class="page-title brand-white font-weight-700 text-center">
@@ -706,9 +706,34 @@ export default {
 <style lang="scss" scoped>
 .privacy-page {
   .page-title {
-    margin: 30vh 0 toRem(120);
+    margin: 30vh 0 toRem(100);
     @include font-height(58, 70);
     width: 50%;
+
+    @include breakpoint-down(xl) {
+      @include font-height(50, 66);
+      margin: 30vh 0 toRem(80);
+    }
+
+    @include breakpoint-down(lg) {
+      @include font-height(42, 60);
+      margin: 25vh 0 toRem(60);
+    }
+
+    @include breakpoint-down(md) {
+      @include font-height(32, 44);
+      margin: 22vh 0 toRem(50);
+      width: 70%;
+    }
+
+    @include breakpoint-down(sm) {
+      @include font-height(30, 42);
+      width: 70%;
+    }
+
+    @include breakpoint-down(xs) {
+      @include font-height(26, 36);
+    }
   }
 
   .content {
@@ -721,12 +746,47 @@ export default {
       margin-bottom: toRem(18);
       text-align: center;
       font-weight: 600;
+
+      @include breakpoint-down(xl) {
+        @include font-height(26, 40);
+      }
+
+      @include breakpoint-down(lg) {
+        @include font-height(24, 38);
+      }
+
+      @include breakpoint-down(sm) {
+        @include font-height(22, 35);
+      }
+
+      @include breakpoint-down(xs) {
+        @include font-height(19, 32);
+      }
     }
 
     .text {
       @include font-height(19, 36);
       margin-bottom: toRem(40);
       text-align: center;
+
+      @include breakpoint-down(xl) {
+        @include font-height(18, 34);
+      }
+
+      @include breakpoint-down(lg) {
+        @include font-height(17, 32);
+        margin-bottom: toRem(35);
+      }
+
+      @include breakpoint-down(sm) {
+        @include font-height(15.5, 30);
+        margin-bottom: toRem(32);
+      }
+
+      @include breakpoint-down(xs) {
+        @include font-height(15.25, 29);
+        margin-bottom: toRem(30);
+      }
 
       p {
         margin-bottom: toRem(30);

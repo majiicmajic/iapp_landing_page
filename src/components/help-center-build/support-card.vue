@@ -1,5 +1,12 @@
 <template>
-  <div class="support-card brand-grey-dark-bg w-100 rounded-15">
+  <div
+    class="support-card brand-grey-dark-bg w-100 rounded-15"
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="100"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+  >
     <!-- ICON -->
     <div class="avatar brand-red-bg">
       <div class="icon" :class="support.icon"></div>
@@ -41,13 +48,30 @@ export default {
   @include flex-column-center;
   height: toRem(270);
 
+  @include breakpoint-down(xl) {
+    height: toRem(240);
+  }
+
+  @include breakpoint-down(lg) {
+    margin-bottom: toRem(30);
+  }
+
   .avatar {
     @include square-shape(65);
     margin-bottom: toRem(30);
 
+    @include breakpoint-down(xl) {
+      @include square-shape(55);
+      margin-bottom: toRem(15);
+    }
+
     .icon {
       @include center-placement;
       font-size: toRem(35);
+
+      @include breakpoint-down(xl) {
+        font-size: toRem(24);
+      }
     }
   }
 
@@ -59,6 +83,10 @@ export default {
   .top-text {
     @include font-height(24, 16);
     margin-bottom: toRem(12);
+
+    @include breakpoint-down(xl) {
+      @include font-height(17, 21);
+    }
   }
 
   .mid-text {
@@ -66,10 +94,19 @@ export default {
     margin-bottom: toRem(10);
     word-wrap: break-word;
     width: 56%;
+
+    @include breakpoint-down(xl) {
+      @include font-height(15.5, 22);
+      width: 60%;
+    }
   }
 
   .bottom-text {
     @include font-height(15, 21);
+
+    @include breakpoint-down(xl) {
+      @include font-height(14, 20);
+    }
   }
 }
 </style>

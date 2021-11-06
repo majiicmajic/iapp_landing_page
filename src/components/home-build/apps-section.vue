@@ -1,8 +1,15 @@
 <template>
   <section class="apps-section">
-    <div class="container px-0">
+    <div class="container px-3 px-sm-4 px-xl-0">
       <!-- TOP ROW  -->
-      <div class="top-title-row">
+      <div
+        class="top-title-row"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div class="title-text brand-white text-capitalize">
           Get started with these super apps
         </div>
@@ -14,7 +21,14 @@
 
       <div class="row">
         <!-- APPS COLUMN  -->
-        <div class="col-12 col-md-6">
+        <div
+          class="col-12 col-md-6"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="120"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <app-card />
           <app-card />
           <app-card />
@@ -22,7 +36,14 @@
 
         <!-- APP VIDEO  -->
         <div class="col-12 col-md-6 position-relative">
-          <div class="video-section h-100">
+          <div
+            class="video-section h-100"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="130"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <!-- VIDEO COVER  -->
             <div class="video-cover brand-red-dark-bg rounded-20"></div>
 

@@ -1,9 +1,16 @@
 <template>
   <div class="contact-block">
-    <div class="container px-0">
+    <div class="container px-3 px-sm-4 px-xl-0">
       <div class="contact-card rounded-20 position-relative overflow-hidden">
         <!-- LEFT -->
-        <div class="left-block">
+        <div
+          class="left-block"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="120"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <!-- TITLE TEXT  -->
           <div class="title-text brand-black font-weight-700">
             Send us a message
@@ -75,7 +82,14 @@
         </div>
 
         <!-- RIGHT -->
-        <div class="right-block brand-white">
+        <div
+          class="right-block brand-white"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="120"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <!-- TITLE TEXT  -->
           <div class="title-text font-weight-700">
             Contact Information
@@ -185,26 +199,53 @@ export default {
   .contact-card {
     margin-top: toRem(-80);
     margin-bottom: toRem(90);
-    @include flex-row-between-nowrap;
+    @include flex-row-between-wrap;
     align-items: flex-start;
     box-shadow: 0 toRem(4) toRem(95) rgba(0, 0, 0, 0.07);
     background: $brand-white;
     height: auto;
 
+    @include breakpoint-down(lg) {
+      margin-top: toRem(-110);
+    }
+
+    @include breakpoint-down(md) {
+      margin-top: toRem(-50);
+    }
+
     .left-block {
       width: 65%;
       padding: toRem(30) toRem(25);
+
+      @include breakpoint-down(md) {
+        width: 100%;
+        margin-bottom: toRem(30);
+      }
 
       .form-control {
         background: $brand-red-lighter !important;
       }
 
       .form-row {
-        @include flex-row-between-nowrap;
+        @include flex-row-between-wrap;
         margin-bottom: toRem(40);
+
+        @include breakpoint-custom-down(420) {
+          &:last-of-type {
+            margin-top: toRem(-30);
+          }
+        }
 
         .form-block {
           width: 48%;
+
+          @include breakpoint-custom-down(420) {
+            width: 100%;
+
+            &:last-of-type {
+              margin-top: toRem(30);
+            }
+          }
         }
       }
     }
@@ -214,34 +255,91 @@ export default {
       padding: toRem(30) toRem(25);
       width: 45%;
       height: 105vh;
+
+      @include breakpoint-down(xl) {
+        padding: toRem(30) toRem(20);
+        height: 110vh;
+      }
+
+      @include breakpoint-down(md) {
+        padding: toRem(30) toRem(35);
+        width: 100%;
+        height: 90vh;
+      }
+
+      @include breakpoint-down(sm) {
+        padding: toRem(28) toRem(22);
+        height: 93vh;
+      }
+
+      @include breakpoint-down(xs) {
+        padding: toRem(28) toRem(22);
+        height: 105vh;
+      }
     }
 
     .title-text {
       @include font-height(17.5, 28);
       margin-bottom: toRem(30);
+
+      @include breakpoint-down(xl) {
+        @include font-height(16.5, 26);
+        margin-bottom: toRem(25);
+      }
+
+      @include breakpoint-down(sm) {
+        @include font-height(15, 25);
+        margin-bottom: toRem(22);
+      }
     }
 
     .contact-data {
       @include flex-row-start-nowrap;
-      margin-bottom: toRem(25);
+      margin-bottom: toRem(20);
       align-items: flex-start;
 
       .icon {
-        font-size: toRem(23);
-        margin-right: toRem(28);
+        font-size: toRem(20);
+        margin-right: toRem(25);
         margin-top: toRem(5);
+
+        @include breakpoint-down(xl) {
+          margin-right: toRem(20);
+          font-size: toRem(17);
+          margin-top: toRem(6);
+        }
+
+        @include breakpoint-down(xs) {
+          display: none;
+        }
       }
 
       .right {
         .title-text {
-          @include font-height(18, 26);
-          margin-bottom: toRem(8);
+          @include font-height(16, 24);
+          margin-bottom: toRem(5);
           font-weight: 600;
+
+          @include breakpoint-down(xl) {
+            @include font-height(15, 23);
+          }
+
+          @include breakpoint-down(sm) {
+            @include font-height(14.5, 22);
+          }
         }
 
         .description {
-          @include font-height(15.5, 25);
+          @include font-height(15, 23);
           @include flex-row-between-nowrap;
+
+          @include breakpoint-down(xl) {
+            @include font-height(14, 21);
+          }
+
+          @include breakpoint-down(sm) {
+            @include font-height(13, 20);
+          }
 
           .social {
             @include flex-row-end-nowrap;
@@ -250,8 +348,17 @@ export default {
               text-decoration: none;
               margin-left: toRem(14);
               margin-right: 0;
-              font-size: toRem(23);
+              font-size: toRem(21);
               color: $brand-white;
+
+              @include breakpoint-down(sm) {
+                font-size: toRem(18);
+              }
+
+              @include breakpoint-down(xs) {
+                font-size: toRem(15);
+                display: unset;
+              }
             }
           }
         }

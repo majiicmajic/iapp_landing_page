@@ -6,13 +6,27 @@
     <div class="curve-top w-100 brand-black-bg"></div>
 
     <!-- INTRO COLUMN  -->
-    <div class="intro-column index-99">
+    <div
+      class="intro-column index-99"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <!-- TITLE TEXT  -->
       <div class="intro-title-text">Moving across the Nation with iRide</div>
     </div>
 
-    <div class="container px-0 mx-auto">
-      <div class="row mx-auto">
+    <div class="container px-2 px-sm-4 px-xl-0 mx-auto">
+      <div
+        class="row mx-auto"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="120"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div class="col-12 col-md-11 mx-auto position-relative">
           <!-- LOCATION NAV  -->
           <div
@@ -82,6 +96,12 @@ export default {
           "iRide is available for your movement within cities in Ghana... keep riding.",
         image: "ghana.png",
       },
+      {
+        title: "Qatar",
+        description:
+          "iRide is available for your movement within cities in Qatar... keep riding.",
+        image: "qatar.png",
+      },
     ],
   }),
 
@@ -106,9 +126,46 @@ export default {
   padding: toRem(130) 0 0;
   @include flex-column-center;
 
+  @include breakpoint-down(md) {
+    padding: toRem(100) 0 0;
+  }
+
+  .curve-top {
+    @include breakpoint-down(md) {
+      margin-top: toRem(-90);
+    }
+
+    @include breakpoint-down(sm) {
+      margin-top: toRem(-160);
+    }
+
+    @include breakpoint-down(xs) {
+      display: none;
+    }
+  }
+
   .intro-column {
+    @include breakpoint-down(xs) {
+      margin-top: toRem(-140);
+      background: $brand-black;
+      border-radius: 0 0 toRem(50) toRem(50);
+      margin-bottom: toRem(30);
+    }
+
     .intro-title-text {
       width: 40%;
+
+      @include breakpoint-down(lg) {
+        width: 60%;
+      }
+
+      @include breakpoint-down(md) {
+        width: 80%;
+      }
+
+      @include breakpoint-down(sm) {
+        width: 90%;
+      }
     }
   }
 
@@ -121,6 +178,14 @@ export default {
     cursor: pointer;
     top: 15%;
 
+    @include breakpoint-down(md) {
+      @include square-shape(38);
+    }
+
+    @include breakpoint-down(sm) {
+      @include square-shape(32);
+    }
+
     &:hover {
       background: $brand-red-lighter;
     }
@@ -131,16 +196,42 @@ export default {
       .icon {
         font-size: toRem(18);
         color: $brand-grey-dark;
+
+        @include breakpoint-down(md) {
+          font-size: toRem(16);
+        }
+
+        @include breakpoint-down(sm) {
+          font-size: toRem(14);
+        }
       }
     }
   }
 
   .left-nav {
     left: 10%;
+
+    @include breakpoint-down(sm) {
+      left: 5%;
+    }
+
+    @include breakpoint-down(xs) {
+      top: toRem(35);
+      left: 2.5%;
+    }
   }
 
   .right-nav {
     right: 10%;
+
+    @include breakpoint-down(sm) {
+      right: 5%;
+    }
+
+    @include breakpoint-down(xs) {
+      top: toRem(35);
+      right: 2.5%;
+    }
   }
 }
 </style>

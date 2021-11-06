@@ -1,8 +1,15 @@
 <template>
   <section class="post-section mgb--40">
-    <div class="container px-0">
+    <div class="container px-3 px-sm-4 px-xl-0">
       <!-- TOP ROW  -->
-      <div class="top-title-row">
+      <div
+        class="top-title-row"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="120"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div class="title-text brand-white text-capitalize">
           Updates from our super app team
         </div>
@@ -47,6 +54,10 @@ export default {
 <style lang="scss" scoped>
 .post-section {
   padding: toRem(140) 0;
+
+  @include breakpoint-down(sm) {
+    padding-top: toRem(80);
+  }
 
   .post-row {
     @include flex-row-between-nowrap;

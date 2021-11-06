@@ -1,7 +1,14 @@
 <template>
   <div class="super-app-blog">
-    <div class="container px-0">
-      <div class="title-text brand-white font-weight-700 mgb-58">
+    <div class="container px-3 px-sm-4 px-xl-0">
+      <div
+        class="title-text brand-white font-weight-700 mgb-58"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="80"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         Trending topics on the super app
       </div>
 
@@ -35,7 +42,14 @@
 
         <!-- APP VIDEO  -->
         <div class="col-12 col-md-6 position-relative">
-          <div class="video-section h-100">
+          <div
+            class="video-section h-100"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="120"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <!-- VIDEO COVER  -->
             <div class="video-cover brand-red-dark-bg rounded-20"></div>
 
@@ -76,10 +90,40 @@ export default {
 
 <style lang="scss" scoped>
 .super-app-blog {
-  padding: toRem(110) 0;
+  padding: toRem(110) 0 toRem(80);
+
+  @include breakpoint-down(xl) {
+    padding: toRem(80) 0;
+  }
+
+  @include breakpoint-down(md) {
+    padding: toRem(40) 0 toRem(70);
+  }
 
   .title-text {
     @include font-height(34, 50);
+
+    @include breakpoint-down(xl) {
+      @include font-height(32, 48);
+    }
+
+    @include breakpoint-down(lg) {
+      @include font-height(28, 42);
+      margin-bottom: toRem(48) !important;
+    }
+
+    @include breakpoint-down(md) {
+      @include font-height(24, 40);
+    }
+
+    @include breakpoint-down(sm) {
+      @include font-height(22, 38);
+    }
+
+    @include breakpoint-down(xs) {
+      @include font-height(18, 32);
+      margin-bottom: toRem(45) !important;
+    }
   }
 }
 </style>

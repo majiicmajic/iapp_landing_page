@@ -10,8 +10,15 @@
           <div class="overlay-cover"></div>
 
           <!-- CONTENT  -->
-          <div class="container px-0 position-relative h-100">
-            <div class="content index-99">
+          <div class="container px-3 px-sm-4 px-xl-0position-relative h-100">
+            <div
+              class="content index-99"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="80"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <div class="hero-title-text brand-white">
                 <p>Dedicated team, for your dedicated dream.</p>
               </div>
@@ -62,9 +69,42 @@ export default {
       width: 44%;
       margin-top: 9vh;
 
+      @include breakpoint-down(lg) {
+        width: 48%;
+        margin-top: 7vh;
+      }
+
+      @include breakpoint-down(sm) {
+        width: 65%;
+      }
+
+      @include breakpoint-down(xs) {
+        width: 75%;
+      }
+
       .hero-title-text {
         @include font-height(58, 68);
         letter-spacing: 0.01em;
+
+        @include breakpoint-down(xl) {
+          @include font-height(44, 57);
+        }
+
+        @include breakpoint-down(lg) {
+          @include font-height(42, 54);
+        }
+
+        @include breakpoint-down(md) {
+          @include font-height(38, 50);
+        }
+
+        @include breakpoint-down(sm) {
+          @include font-height(36, 50);
+        }
+
+        @include breakpoint-down(xs) {
+          @include font-height(29, 44);
+        }
       }
     }
   }

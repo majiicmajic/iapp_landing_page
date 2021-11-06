@@ -283,6 +283,10 @@ label {
     background: transparent;
     height: auto;
 
+    @include breakpoint-down(sm) {
+      border: toRem(1) solid $brand-red;
+    }
+
     .placeholder-text {
       @include font-height(13.5, 15);
       color: $brand-lighter-ash;

@@ -6,7 +6,14 @@
     <div class="curve-top w-100 brand-black-bg"></div>
 
     <!-- INTRO COLUMN  -->
-    <div class="intro-column index-99">
+    <div
+      class="intro-column index-99"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <!-- META TEXT  -->
       <div class="intro-meta-text">WHO WE ARE</div>
 
@@ -16,10 +23,17 @@
 
     <!-- SERVICES ROW  -->
     <div class="services-row">
-      <div class="container px-0">
+      <div class="container px-3 px-sm-4 px-xl-0">
         <div class="row">
           <!-- SERVICE ONE -->
-          <div class="col-12 col-sm-6 col-md-3">
+          <div
+            class="col-12 col-sm-6 col-md-3"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="120"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div class="service-card service-one">
               <!-- SERVICE IMAGE -->
               <img :src="staticImg('service-one.png')" alt="" />
@@ -37,7 +51,14 @@
           </div>
 
           <!-- SERVICE TWO -->
-          <div class="col-12 col-sm-6 col-md-3">
+          <div
+            class="col-12 col-sm-6 col-md-3"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="130"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div class="service-card service-two">
               <!-- SERVICE IMAGE -->
               <img :src="staticImg('service-two.png')" alt="" />
@@ -55,7 +76,14 @@
           </div>
 
           <!-- SERVICE THREE -->
-          <div class="col-12 col-sm-6 col-md-3">
+          <div
+            class="col-12 col-sm-6 col-md-3"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="140"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div class="service-card service-three">
               <!-- SERVICE IMAGE -->
               <img :src="staticImg('service-three.png')" alt="" />
@@ -73,7 +101,14 @@
           </div>
 
           <!-- SERVICE FOUR -->
-          <div class="col-12 col-sm-6 col-md-3">
+          <div
+            class="col-12 col-sm-6 col-md-3"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div class="service-card service-four">
               <!-- SERVICE IMAGE -->
               <img :src="staticImg('service-four.png')" alt="" />
@@ -105,39 +140,121 @@ export default {
 .service-section {
   @include flex-column-center;
 
+  .curve-top {
+    @include breakpoint-down(md) {
+      margin-top: toRem(-130);
+    }
+
+    @include breakpoint-down(sm) {
+      margin-top: toRem(-160);
+    }
+  }
+
   .intro-column {
     .intro-title-text {
       width: 30%;
+
+      @include breakpoint-down(xl) {
+        width: 35%;
+      }
+
+      @include breakpoint-down(lg) {
+        width: 45%;
+      }
+
+      @include breakpoint-down(sm) {
+        width: 65%;
+      }
+
+      @include breakpoint-down(xs) {
+        width: 85%;
+      }
     }
   }
 
   .services-row {
     margin-top: toRem(115);
     padding-bottom: toRem(125);
+
+    @include breakpoint-down(xl) {
+      padding-bottom: toRem(100);
+    }
   }
 
   .service-one {
     img {
       @include rectangle-shape(160, 190);
       top: toRem(-110);
+
+      @include breakpoint-down(xl) {
+        @include rectangle-shape(120, 150);
+      }
+
+      @include breakpoint-down(lg) {
+        top: toRem(-90);
+      }
+
+      @include breakpoint-down(md) {
+        @include rectangle-shape(110, 130);
+        top: toRem(-70);
+      }
     }
   }
 
   .service-two {
     img {
       @include rectangle-shape(220, 210);
+
+      @include breakpoint-down(xl) {
+        @include rectangle-shape(180, 170);
+      }
+
+      @include breakpoint-down(lg) {
+        top: toRem(-100);
+      }
+
+      @include breakpoint-down(md) {
+        @include rectangle-shape(145, 140);
+        top: toRem(-70);
+      }
     }
   }
 
   .service-three {
     img {
       @include rectangle-shape(215, 210);
+
+      @include breakpoint-down(xl) {
+        @include rectangle-shape(175, 170);
+      }
+
+      @include breakpoint-down(lg) {
+        top: toRem(-100);
+      }
+
+      @include breakpoint-down(md) {
+        @include rectangle-shape(145, 140);
+        top: toRem(-70);
+      }
     }
   }
 
   .service-four {
     img {
       @include rectangle-shape(190, 215);
+
+      @include breakpoint-down(xl) {
+        @include rectangle-shape(150, 175);
+      }
+
+      @include breakpoint-down(lg) {
+        top: toRem(-85);
+      }
+
+      @include breakpoint-down(md) {
+        @include rectangle-shape(145, 145);
+        top: toRem(-70);
+      }
     }
   }
 }

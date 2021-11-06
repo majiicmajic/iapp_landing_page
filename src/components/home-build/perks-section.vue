@@ -4,14 +4,28 @@
     <div class="curve-top w-100 brand-black-bg"></div>
 
     <!-- INTRO COLUMN  -->
-    <div class="intro-column index-99">
+    <div
+      class="intro-column index-99"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="120"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <!-- TITLE TEXT  -->
       <div class="intro-title-text">Perks of the super app</div>
     </div>
 
-    <div class="container px-0 mx-auto">
+    <div class="container px-3 px-sm-4 px-xl-0 mx-auto">
       <div class="row mx-auto">
-        <div class="col-12 col-md-11 mx-auto">
+        <div
+          class="col-12 col-md-11 mx-auto"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="140"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <!-- CAROUSEL  -->
           <carousel :autoplay="true" :nav="false" :items="1">
             <perks-block
@@ -57,6 +71,16 @@ export default {
 .perks-section {
   padding: toRem(180) 0 toRem(50);
   @include flex-column-center;
+
+  .curve-top {
+    @include breakpoint-down(md) {
+      margin-top: toRem(-50);
+    }
+
+    @include breakpoint-down(sm) {
+      // margin-top: toRem(-160);
+    }
+  }
 
   .intro-column {
     .intro-title-text {
