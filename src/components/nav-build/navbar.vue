@@ -143,6 +143,14 @@ export default {
     exclusion_list: ["contact", "about"],
   }),
 
+  watch: {
+    $route: {
+      handler() {
+        if (this.show_mobile_menu) this.toggleMobileMenu();
+      },
+    },
+  },
+
   mounted() {
     window.onscroll = () => {
       this.$refs.navbar.classList.toggle("scrolling-up", window.scrollY > 0);

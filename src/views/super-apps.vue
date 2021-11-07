@@ -10,14 +10,28 @@
           <div class="overlay-cover"></div>
 
           <!-- CONTENT  -->
-          <div class="container px-0 position-relative h-100">
+          <div class="container px-3 px-sm-4 px-xl-0 position-relative h-100">
             <div class="content index-99">
-              <div class="hero-title-text brand-white">
+              <div
+                class="hero-title-text brand-white"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <p>The only super app that is accessible for everyone.</p>
               </div>
 
               <!-- DOWNLOAD BUTTON ROW  -->
-              <div class="download-btn-row">
+              <div
+                class="download-btn-row"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
                 <!-- APP STORE DOWNLOAD  -->
                 <div class="app-download-btn mgr-30">
                   <div class="icon icon-apple mgr-13"></div>
@@ -119,15 +133,53 @@ export default {
       width: 50%;
       margin-top: 12vh;
 
+      @include breakpoint-down(md) {
+        width: 60%;
+        margin-top: 22vh;
+      }
+
+      @include breakpoint-down(sm) {
+        margin-top: 14vh;
+      }
+
+      @include breakpoint-down(xs) {
+        margin-top: 13vh;
+        width: 85%;
+      }
+
       .hero-title-text {
         @include font-height(58, 64);
         letter-spacing: 0.01em;
+
+        @include breakpoint-down(xl) {
+          @include font-height(44, 58);
+        }
+
+        @include breakpoint-down(lg) {
+          @include font-height(42, 48);
+        }
+
+        @include breakpoint-down(md) {
+          @include font-height(38, 54);
+        }
+
+        @include breakpoint-down(sm) {
+          @include font-height(34, 52);
+        }
+
+        @include breakpoint-down(xs) {
+          @include font-height(31, 50);
+        }
+
+        @include breakpoint-custom-down(380) {
+          @include font-height(28, 44);
+        }
       }
     }
 
     .download-btn-row {
       margin-top: toRem(40);
-      @include flex-row-start-nowrap;
+      @include flex-row-start-wrap;
     }
   }
 }

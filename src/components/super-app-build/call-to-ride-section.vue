@@ -6,14 +6,28 @@
     <!-- CURVE TOP  -->
     <div class="curve-top w-100 brand-black-bg"></div>
 
-    <div class="container px-0 mx-auto">
+    <div class="container px-3 px-sm-4 px-xl-0 mx-auto">
       <!-- TITLE TEXT  -->
-      <div class="title-text font-weight-700 brand-white">
+      <div
+        class="title-text font-weight-700 brand-white"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         iRide is everywhere, call for a ride now.
       </div>
 
       <!-- DOWNLOAD BUTTON ROW  -->
-      <div class="download-btn-row">
+      <div
+        class="download-btn-row"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <!-- APP STORE DOWNLOAD  -->
         <div class="app-download-btn mgr-25">
           <div class="icon icon-apple mgr-12"></div>
@@ -61,20 +75,52 @@ export default {
 
   .curve-top {
     height: toRem(110);
+
+    @include breakpoint-down(sm) {
+      margin-top: toRem(-30);
+    }
   }
 
   .container {
     padding: toRem(200) 0 toRem(140);
+
+    @include breakpoint-down(sm) {
+      padding: toRem(140) 0 toRem(80);
+    }
   }
 
   .title-text {
     @include font-height(48, 54);
     margin-bottom: toRem(35);
     width: 35%;
+
+    @include breakpoint-down(xl) {
+      @include font-height(42, 48);
+    }
+
+    @include breakpoint-down(lg) {
+      @include font-height(40, 48);
+      width: 50%;
+    }
+
+    @include breakpoint-down(md) {
+      @include font-height(36, 44);
+      width: 54%;
+    }
+
+    @include breakpoint-down(sm) {
+      @include font-height(33, 42);
+      width: 58%;
+    }
+
+    @include breakpoint-down(xs) {
+      @include font-height(26, 38);
+      width: 75%;
+    }
   }
 
   .download-btn-row {
-    @include flex-row-start-nowrap;
+    @include flex-row-start-wrap;
   }
 }
 </style>

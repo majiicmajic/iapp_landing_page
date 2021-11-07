@@ -29,7 +29,9 @@
     <div class="bottom-row container px-3 px-md-4 px-xl-5">
       <div class="nav-items">
         <!-- ABOUT LINK  -->
-        <router-link to class="item">Super Apps</router-link>
+        <router-link :to="{ name: 'superApps' }" class="item"
+          >Super Apps</router-link
+        >
         <!-- DOWNLOADS LINK  -->
         <div class="item">
           <div
@@ -106,6 +108,12 @@
 <script>
 export default {
   name: "mobileMenu",
+
+  computed: {
+    getCurrentPage() {
+      return this.$route.name;
+    },
+  },
 
   data: () => ({
     show_mobile_dropdown: false,

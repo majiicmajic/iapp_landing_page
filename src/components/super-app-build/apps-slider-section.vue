@@ -1,14 +1,28 @@
 <template>
   <div class="app-slider-section">
-    <div class="container px-0">
+    <div class="container px-3 px-sm-4 px-xl-0">
       <!-- INTRO COLUMN  -->
-      <div class="intro-column index-99">
+      <div
+        class="intro-column index-99"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <!-- TITLE TEXT  -->
         <div class="intro-title-text">These are some of iApp best lists</div>
       </div>
 
       <div class="row mx-auto">
-        <div class="col-12 col-md-11 mx-auto">
+        <div
+          class="col-12 col-md-11 mx-auto"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="120"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <!-- CAROUSEL  -->
           <carousel :autoplay="true" :nav="false" :items="1">
             <perks-block
@@ -54,7 +68,23 @@ export default {
 .app-slider-section {
   padding: toRem(145) 0;
 
+  @include breakpoint-down(sm) {
+    padding: toRem(80) 0;
+  }
+
+  @include breakpoint-down(xs) {
+    padding: toRem(50) 0;
+  }
+
   .intro-column {
+    @include breakpoint-down(sm) {
+      margin-bottom: toRem(-60);
+    }
+
+    @include breakpoint-down(xs) {
+      margin-bottom: toRem(-80);
+    }
+
     .intro-title-text {
       width: 80%;
     }

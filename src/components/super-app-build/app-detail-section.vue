@@ -1,9 +1,16 @@
 <template>
   <div class="app-detail-section">
-    <div class="container px-0">
+    <div class="container px-3 px-sm-4 px-xl-0">
       <div class="app-detail-row">
         <!-- APP DETAIL CARD ONE -->
-        <div class="app-detail-card brand-orange-bg">
+        <div
+          class="app-detail-card brand-orange-bg"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <!-- TITLE TEXT -->
           <div class="title-text">
             Chatting becomes easy when you surf iApp.
@@ -26,7 +33,14 @@
         </div>
 
         <!-- APP DETAIL CARD TWO -->
-        <div class="app-detail-card brand-green-bg">
+        <div
+          class="app-detail-card brand-green-bg"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <!-- TITLE TEXT -->
           <div class="title-text">
             You can book a lodge directly from iApp.
@@ -63,7 +77,7 @@ export default {
   padding: toRem(140) 0;
 
   .app-detail-row {
-    @include flex-row-around-nowrap;
+    @include flex-row-around-wrap;
     align-items: flex-start;
   }
 

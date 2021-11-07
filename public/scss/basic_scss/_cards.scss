@@ -158,24 +158,94 @@
     position: relative;
     color: $brand-white;
 
+    @include breakpoint-down(xl) {
+        padding: toRem(40) toRem(26) toRem(35);
+    }
+
+    @include breakpoint-down(lg) {
+        padding: toRem(35) toRem(20) toRem(30);
+        height: toRem(520);
+        width: 46%;
+    }
+
+    @include breakpoint-down(md) {
+        padding: toRem(40) toRem(30) toRem(40);
+        height: toRem(520);
+        width: 100%;
+
+        &:last-of-type {
+            margin-top: toRem(40);
+        }
+    }
+
+    @include breakpoint-down(xs) {
+        padding: toRem(30) toRem(20);
+        height: toRem(250);
+    }
+
     .title-text {
         font-weight: 600;
         @include font-height(34, 38);
         margin-bottom: toRem(26);
+
+        @include breakpoint-down(xl) {
+            @include font-height(23, 32);
+            margin-bottom: toRem(23);
+        }
+
+        @include breakpoint-down(md) {
+            @include font-height(25, 32);
+            margin-bottom: toRem(23);
+        }
+
+        @include breakpoint-down(sm) {
+            @include font-height(22, 30);
+            margin-bottom: toRem(21);
+        }
+
+        @include breakpoint-down(xs) {
+            @include font-height(19, 28);
+            margin-bottom: toRem(19);
+        }
     }
 
     .description {
         @include font-height(18, 26);
+
+        @include breakpoint-down(xl) {
+            @include font-height(15, 24);
+        }
+
+        @include breakpoint-down(md) {
+            @include font-height(17, 26);
+        }
+
+        @include breakpoint-down(sm) {
+            @include font-height(15, 24);
+        }
+
+        @include breakpoint-down(xs) {
+            @include font-height(13.5, 23);
+        }
     }
 
     .get-app {
         @include font-height(16, 21);
         position: absolute;
         bottom: toRem(44);
+
+        @include breakpoint-down(xs) {
+            @include font-height(14, 18);
+            bottom: toRem(38);
+        }
     }
 
     .app-image {
         position: absolute;
         right: 0;
+
+        @include breakpoint-down(xs) {
+            display: none;
+        }
     }
 }
