@@ -15,7 +15,7 @@
     <!-- BOTTOM CONTENT  -->
     <div class="bottom-content brand-white">
       <!-- TITLE  -->
-      <div class="title text-capitalize">{{ title }}</div>
+      <div class="title">{{ title }}</div>
 
       <!-- DESCRIPTION -->
       <div class="description">
