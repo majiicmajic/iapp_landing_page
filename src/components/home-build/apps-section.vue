@@ -31,9 +31,20 @@
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <app-card />
-          <app-card />
-          <app-card />
+          <app-card
+            title="iRide"
+            description="Ready to move around the city or beyond, check iRide."
+          />
+
+          <app-card
+            title="iEats"
+            description="Delicious foods are one step closer to you, just order."
+          />
+
+          <app-card
+            title="iChat"
+            description="Get in touch with your love one’s anytime, with iChat."
+          />
         </div>
 
         <!-- APP VIDEO  -->

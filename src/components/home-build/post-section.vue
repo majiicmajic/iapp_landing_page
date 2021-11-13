@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 .post-section {
-  padding: toRem(100) 0 toRem(60);
+  padding: toRem(100) 0 toRem(140);
 
   .post-row {
     // @include flex-row-between-nowrap;

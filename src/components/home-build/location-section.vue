@@ -6,14 +6,7 @@
     <div class="curve-top w-100 brand-black-bg"></div>
 
     <!-- INTRO COLUMN  -->
-    <div
-      class="intro-column index-99"
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="40"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-    >
+    <div class="intro-column index-99">
       <!-- TITLE TEXT  -->
       <div class="intro-title-text">Moving across the Nation with iRide</div>
     </div>
@@ -131,12 +124,15 @@ export default {
   }
 
   .curve-top {
+    margin-top: toRem(15);
+    height: 190px;
+
     @include breakpoint-down(md) {
-      margin-top: toRem(-90);
+      margin-top: toRem(-30);
     }
 
     @include breakpoint-down(sm) {
-      margin-top: toRem(-160);
+      margin-top: toRem(-50);
     }
 
     @include breakpoint-down(xs) {
@@ -145,6 +141,8 @@ export default {
   }
 
   .intro-column {
+    margin-top: toRem(-60);
+
     @include breakpoint-down(xs) {
       margin-top: toRem(-140);
       background: $brand-black;

@@ -1,15 +1,15 @@
 <template>
-  <router-link :to="{ name: 'superApps' }" class="app-card">
+  <router-link :to="{ name: 'superApps' }" class="app-card link-no-underline">
     <!-- APP IMAGE  -->
     <img :src="staticImg('i-ride.png')" alt="" class="app-image rounded-20" />
 
     <div class="info brand-white">
       <!-- TITLE  -->
-      <div class="app-title font-weight-700">iRide</div>
+      <div class="app-title font-weight-700">{{ title }}</div>
 
       <!-- DESCRIPTION  -->
       <div class="app-description font-weight-500">
-        Ready to move around the city or beyond, check iRide.
+        {{ description }}
       </div>
     </div>
   </router-link>
@@ -18,6 +18,18 @@
 <script>
 export default {
   name: "appCard",
+
+  props: {
+    title: {
+      type: String,
+      default: "iRide",
+    },
+
+    description: {
+      type: String,
+      default: "Ready to move around the city or beyond, check iRide.",
+    },
+  },
 };
 </script>
 
