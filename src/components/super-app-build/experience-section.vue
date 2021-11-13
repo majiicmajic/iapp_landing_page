@@ -13,7 +13,7 @@
                 class="position-relative h-100 h-100"
                 data-aos="fade-up"
                 data-aos-offset="200"
-                data-aos-delay="100"
+                data-aos-delay="50"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
               >
@@ -31,7 +31,7 @@
               class="title-text"
               data-aos="fade-up"
               data-aos-offset="200"
-              data-aos-delay="120"
+              data-aos-delay="40"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
             >
@@ -39,30 +39,14 @@
             </div>
 
             <!-- DESCRIPTION -->
-            <div
-              class="description"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="120"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-            >
+            <div class="description">
               Enjoy your trip around the city with our fun to be drivers, that
               drives to give you joy on the go, the experience is always super.
               Check iRide.
             </div>
 
             <!-- CALL TO ACTION  -->
-            <a
-              href=""
-              class="smooth-transition"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="120"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              >Start booking for rides</a
-            >
+            <a href="">Start booking for rides</a>
           </div>
         </div>
       </div>

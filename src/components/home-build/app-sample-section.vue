@@ -1,49 +1,44 @@
 <template>
-  <div class="app-sample-section position-relative brand-grey-dark-bg">
+  <div
+    class="app-sample-section position-relative brand-grey-dark-bg"
+    id="superAppCTA"
+  >
     <!-- BACKGROUND IMAGE  -->
     <img :src="staticImg('app-samples.png')" alt="" />
 
     <div class="container px-3 px-sm-4 px-xl-0 position-relative h-100">
       <div class="content-area">
-        <div
-          class="text font-weight-700 brand-white"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="120"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
+        <div class="text font-weight-700 brand-white">
           Ready to be super? Download iApp now!
         </div>
 
         <!-- DOWNLOAD BUTTON ROW  -->
-        <div
-          class="download-btn-row"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="140"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
+        <div class="download-btn-row">
           <!-- APP STORE DOWNLOAD  -->
-          <div class="app-download-btn mgr-15">
+          <router-link
+            to="/contact"
+            class="app-download-btn mgr-15 text-decoration-none"
+          >
             <div class="icon icon-apple mgr-12"></div>
 
             <div>
               <div class="text-one">Download on</div>
               <div class="text-two">App Store</div>
             </div>
-          </div>
+          </router-link>
 
           <!-- PLAY STORE DOWNLOAD  -->
-          <div class="app-download-btn">
+          <router-link
+            to="/contact"
+            class="app-download-btn text-decoration-none"
+          >
             <div class="icon icon-google-play mgr-12"></div>
 
             <div>
               <div class="text-one">Get it on</div>
               <div class="text-two">Google Play</div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
     </div>

@@ -4,26 +4,12 @@
       <div class="container px-3 px-sm-4 px-xl-0">
         <div class="left-section">
           <!-- TITLE TEXT -->
-          <div
-            class="title brand-white font-weight-700"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
+          <div class="title brand-white font-weight-700">
             We´d love to hear from you.
           </div>
 
           <!-- DESCRIPTION -->
-          <div
-            class="description font-weight-500"
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="120"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
+          <div class="description font-weight-500">
             Got a question or any complain you would like to pass across to us?
             Use the contact form below to reach out to us.
           </div>

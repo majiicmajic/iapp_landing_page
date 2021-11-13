@@ -10,7 +10,7 @@
       class="intro-column index-99"
       data-aos="fade-up"
       data-aos-offset="200"
-      data-aos-delay="100"
+      data-aos-delay="40"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
     >
@@ -23,7 +23,7 @@
         class="row mx-auto"
         data-aos="fade-up"
         data-aos-offset="200"
-        data-aos-delay="120"
+        data-aos-delay="70"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
@@ -123,11 +123,11 @@ export default {
 
 <style lang="scss" scoped>
 .location-section {
-  padding: toRem(130) 0 0;
+  padding: toRem(100) 0 0;
   @include flex-column-center;
 
   @include breakpoint-down(md) {
-    padding: toRem(100) 0 0;
+    padding: toRem(80) 0 0;
   }
 
   .curve-top {

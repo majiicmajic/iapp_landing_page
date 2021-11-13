@@ -120,7 +120,7 @@ button[disabled] {
   background: $brand-white;
   padding-right: toRem(20);
   border-radius: toRem(50);
-  color: $brand-grey-text;
+  color: $brand-grey-text !important;
   cursor: pointer;
   width: auto;
 
@@ -132,7 +132,7 @@ button[disabled] {
   .icon {
     margin-right: toRem(7);
     font-size: toRem(20);
-    color: $brand-red;
+    color: $brand-red !important;
   }
 
   .text-one {

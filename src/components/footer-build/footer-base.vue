@@ -102,10 +102,13 @@ export default {
 
   data: () => ({
     language_entry: "",
-    pre_selected_language: {},
+    pre_selected_language: { id: 1, name: "English" },
 
     country_entry: "",
-    pre_selected_country: {},
+    pre_selected_country: {
+      id: 1,
+      name: "United Kingdom",
+    },
 
     languages: [
       {

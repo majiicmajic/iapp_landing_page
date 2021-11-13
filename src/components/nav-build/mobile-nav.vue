@@ -30,17 +30,18 @@
       <div class="nav-items">
         <!-- ABOUT LINK  -->
         <router-link :to="{ name: 'superApps' }" class="item"
-          >Super Apps</router-link
-        >
+          ><div class="text">Super Apps</div>
+        </router-link>
         <!-- DOWNLOADS LINK  -->
         <div class="item">
           <div
             class="item-wrapper d-flex justify-content-start align-items-center"
             @click="toggleMobileDropdown"
           >
-            <div class="text">Company</div>
+            <div class="text mgr-20">Company</div>
             <div
-              class="icon icon-caret-down"
+              class="icon icon-chevron-down position-relative"
+              style="top: 1.5px"
               :class="{ 'rotate-180': show_mobile_dropdown }"
             ></div>
           </div>
@@ -249,8 +250,10 @@ export default {
               @include font-height(13, 19);
               color: $brand-white;
             }
+
             &:hover {
               background: #f2f2f2;
+              color: $brand-black;
 
               .title {
                 text-decoration: underline;

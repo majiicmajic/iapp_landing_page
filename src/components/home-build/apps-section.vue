@@ -14,7 +14,9 @@
           Get started with these super apps
         </div>
 
-        <router-link to class="view-link smooth-transition"
+        <router-link
+          :to="{ name: 'superApps' }"
+          class="view-link smooth-transition"
           >View All</router-link
         >
       </div>

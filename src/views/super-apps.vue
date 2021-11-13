@@ -12,26 +12,12 @@
           <!-- CONTENT  -->
           <div class="container px-3 px-sm-4 px-xl-0 position-relative h-100">
             <div class="content index-99">
-              <div
-                class="hero-title-text brand-white"
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-delay="100"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-              >
+              <div class="hero-title-text brand-white">
                 <p>The only super app that is accessible for everyone.</p>
               </div>
 
               <!-- DOWNLOAD BUTTON ROW  -->
-              <div
-                class="download-btn-row"
-                data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-delay="100"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-              >
+              <div class="download-btn-row">
                 <!-- APP STORE DOWNLOAD  -->
                 <div class="app-download-btn mgr-30">
                   <div class="icon icon-apple mgr-13"></div>

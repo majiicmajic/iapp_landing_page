@@ -101,45 +101,11 @@
 
             <div class="right">
               <div class="title-text">United Kingdom</div>
-              <div class="description">
-                Clockwise Greenside House 50 station road, Wood Green, London,
-                N22 7DE - 5 Minutes Opposite Wood Green Tube Station.
-              </div>
-            </div>
-          </div>
-
-          <!-- GHANA -->
-          <div class="contact-data">
-            <div class="icon icon-map-pin"></div>
-
-            <div class="right">
-              <div class="title-text">Ghana</div>
-              <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper
-              </div>
-            </div>
-          </div>
-
-          <!-- NIGERIA -->
-          <div class="contact-data">
-            <div class="icon icon-map-pin"></div>
-
-            <div class="right">
-              <div class="title-text">Nigeria</div>
-              <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper
-              </div>
-            </div>
-          </div>
-
-          <!-- DUBAI -->
-          <div class="contact-data">
-            <div class="icon icon-map-pin"></div>
-
-            <div class="right">
-              <div class="title-text">Dubai</div>
-              <div class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper
+              <div class="description flex-column align-items-start">
+                <p>Clockwise Greenside House</p>
+                <p>50 station road, Wood Green,</p>
+                <p>London, N22 7DE</p>
+                <p>5 Minutes Opposite Wood Green Tube Station.</p>
               </div>
             </div>
           </div>
@@ -162,25 +128,26 @@
                 <div class="text">
                   +233-57-580-6379
                 </div>
-
-                <div class="social">
-                  <!-- FACEBOOK -->
-                  <a href="" class="icon">
-                    <span class="icon-facebook-fill"></span>
-                  </a>
-
-                  <!-- TWITTER -->
-                  <a href="" class="icon">
-                    <span class="icon-twitter"></span>
-                  </a>
-
-                  <!-- INSTAGRAM -->
-                  <a href="" class="icon">
-                    <span class="icon-instagram"></span>
-                  </a>
-                </div>
               </div>
             </div>
+          </div>
+
+          <!-- SOCIAL  -->
+          <div class="social">
+            <!-- FACEBOOK -->
+            <a href="" class="icon">
+              <span class="icon-facebook-fill"></span>
+            </a>
+
+            <!-- TWITTER -->
+            <a href="" class="icon">
+              <span class="icon-twitter"></span>
+            </a>
+
+            <!-- INSTAGRAM -->
+            <a href="" class="icon">
+              <span class="icon-instagram"></span>
+            </a>
           </div>
         </div>
       </div>
@@ -199,7 +166,7 @@ export default {
   .contact-card {
     margin-top: toRem(-80);
     margin-bottom: toRem(90);
-    @include flex-row-between-wrap;
+    @include flex-row-between-nowrap;
     align-items: flex-start;
     box-shadow: 0 toRem(4) toRem(95) rgba(0, 0, 0, 0.07);
     background: $brand-white;
@@ -210,6 +177,7 @@ export default {
     }
 
     @include breakpoint-down(md) {
+      @include flex-row-between-wrap;
       margin-top: toRem(-50);
     }
 
@@ -254,7 +222,7 @@ export default {
       background: #3d2525;
       padding: toRem(30) toRem(25);
       width: 45%;
-      height: 105vh;
+      height: 100vh;
 
       @include breakpoint-down(xl) {
         padding: toRem(30) toRem(20);
@@ -295,7 +263,7 @@ export default {
 
     .contact-data {
       @include flex-row-start-nowrap;
-      margin-bottom: toRem(20);
+      margin-bottom: toRem(35);
       align-items: flex-start;
 
       .icon {
@@ -340,27 +308,27 @@ export default {
           @include breakpoint-down(sm) {
             @include font-height(13, 20);
           }
+        }
+      }
+    }
 
-          .social {
-            @include flex-row-end-nowrap;
+    .social {
+      @include flex-row-start-nowrap;
 
-            .icon {
-              text-decoration: none;
-              margin-left: toRem(14);
-              margin-right: 0;
-              font-size: toRem(21);
-              color: $brand-white;
+      .icon {
+        text-decoration: none;
+        margin-left: 0;
+        margin-right: toRem(20);
+        font-size: toRem(21);
+        color: $brand-white;
 
-              @include breakpoint-down(sm) {
-                font-size: toRem(18);
-              }
+        @include breakpoint-down(sm) {
+          font-size: toRem(18);
+        }
 
-              @include breakpoint-down(xs) {
-                font-size: toRem(15);
-                display: unset;
-              }
-            }
-          }
+        @include breakpoint-down(xs) {
+          font-size: toRem(15);
+          display: unset;
         }
       }
     }

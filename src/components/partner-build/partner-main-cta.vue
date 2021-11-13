@@ -1,28 +1,18 @@
 <template>
-  <div class="partner-main-cta brand-grey-dark-bg">
+  <div class="partner-main-cta brand-grey-dark-bg" id="partnerCTA">
     <div class="container px-3 px-sm-4 px-xl-0">
       <div class="content">
-        <div
-          class="cta brand-white font-weight-700 text-center mgb-50"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="120"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
+        <div class="cta brand-white font-weight-700 text-center mgb-50">
           Ready to increase your business reach for success?
         </div>
 
-        <button
+        <router-link
+          to="/contact"
           class="btn btn-primary"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="120"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
+          style="width: max-content"
         >
           Become Our Partner
-        </button>
+        </router-link>
       </div>
     </div>
   </div>

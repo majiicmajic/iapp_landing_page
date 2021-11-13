@@ -1,5 +1,5 @@
 <template>
-  <div class="app-card">
+  <router-link :to="{ name: 'superApps' }" class="app-card">
     <!-- APP IMAGE  -->
     <img :src="staticImg('i-ride.png')" alt="" class="app-image rounded-20" />
 
@@ -12,7 +12,7 @@
         Ready to move around the city or beyond, check iRide.
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>

@@ -23,7 +23,7 @@
           </div>
 
           <!-- GET APP LINK -->
-          <div class="get-app">Get the super app</div>
+          <a href="#superAppCTA" class="get-app">Get the super app</a>
 
           <img
             :src="staticImg('saly.png')"
@@ -53,7 +53,7 @@
           </div>
 
           <!-- GET APP LINK -->
-          <div class="get-app">Get the super app</div>
+          <a href="#superAppCTA" class="get-app">Get the super app</a>
 
           <img
             :src="staticImg('hotel.png')"

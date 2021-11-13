@@ -34,6 +34,14 @@
             <post-card image="post-three.png" />
           </div>
         </div>
+
+        <div
+          class="row d-flex justify-content-center align-items-center mgt-40"
+        >
+          <button class="btn btn-primary" style="width:max-content">
+            View Updates
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -53,15 +61,15 @@ export default {
 
 <style lang="scss" scoped>
 .post-section {
-  padding: toRem(140) 0;
-
-  @include breakpoint-down(sm) {
-    padding-top: toRem(80);
-  }
+  padding: toRem(100) 0 toRem(60);
 
   .post-row {
-    @include flex-row-between-nowrap;
+    // @include flex-row-between-nowrap;
     margin-top: toRem(40);
+
+    .btn {
+      padding: toRem(12.5) toRem(45);
+    }
   }
 }
 </style>

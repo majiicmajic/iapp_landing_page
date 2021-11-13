@@ -30,35 +30,35 @@
       </div>
 
       <!-- TEAM ROW  -->
-      <div class="team-row row d-flex justify-content-center">
-        <div
-          class="col-12 col-md-6 col-lg-4"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="140"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
+      <div
+        class="team-row row d-flex justify-content-center"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="140"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="col-12 col-md-6 col-lg-4">
           <process-card
-            icon="icon-cloud-download"
-            title="Download the app"
-            description="Visit your device app store to download."
+            icon="icon-brief-case"
+            title="Work with us"
+            description="Need a work? Bring your business to iApp."
           />
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
           <process-card
-            icon="icon-user-plus"
-            title="Register an account"
-            description="Fill in the required details to sign up."
+            icon="icon-scanner"
+            title="Drive with us"
+            description="It’s now easy to drive anywhere with iRide."
           />
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
           <process-card
-            icon="icon-messenger"
-            title="Start using your iApp"
-            description="Get started and explore all the super app features."
+            icon="icon-shopping-cart"
+            title="Sell with us"
+            description="Got a large mall? You can sell directly from iMart."
           />
         </div>
       </div>

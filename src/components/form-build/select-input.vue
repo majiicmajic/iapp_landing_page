@@ -102,6 +102,7 @@ export default {
         if (Object.keys(value).length)
           this.selected_value = value.name || value.abbreviation;
       },
+      immediate: true,
     },
   },
 
