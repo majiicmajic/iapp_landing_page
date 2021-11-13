@@ -32,16 +32,19 @@
           data-aos-easing="ease-in-out"
         >
           <app-card
+            image="i-ride.png"
             title="iRide"
             description="Ready to move around the city or beyond, check iRide."
           />
 
           <app-card
+            image="i-eat.png"
             title="iEats"
             description="Delicious foods are one step closer to you, just order."
           />
 
           <app-card
+            image="i-chat.png"
             title="iChat"
             description="Get in touch with your love one’s anytime, with iChat."
           />

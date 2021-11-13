@@ -14,7 +14,7 @@
           Updates from our super app team
         </div>
 
-        <router-link to class="view-link smooth-transition"
+        <router-link to="/blog" class="view-link smooth-transition"
           >View All</router-link
         >
       </div>
@@ -38,9 +38,13 @@
         <div
           class="row d-flex justify-content-center align-items-center mgt-40"
         >
-          <button class="btn btn-primary" style="width:max-content">
+          <router-link
+            to="/blog"
+            class="btn btn-primary"
+            style="width:max-content"
+          >
             View Updates
-          </button>
+          </router-link>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@
 
           <!-- DESCRIPTION -->
           <div class="description">
-            You can aswell chat with your friends, families and lover directly
+            You can as well chat with your friends, families and lover directly
             with iChat.
           </div>
 

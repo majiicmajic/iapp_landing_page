@@ -1,7 +1,7 @@
 <template>
   <router-link :to="{ name: 'superApps' }" class="app-card link-no-underline">
     <!-- APP IMAGE  -->
-    <img :src="staticImg('i-ride.png')" alt="" class="app-image rounded-20" />
+    <img :src="staticImg(image)" alt="" class="app-image rounded-20" />
 
     <div class="info brand-white">
       <!-- TITLE  -->
@@ -20,6 +20,10 @@ export default {
   name: "appCard",
 
   props: {
+    image: {
+      type: String,
+      default: "i-ride.png",
+    },
     title: {
       type: String,
       default: "iRide",
