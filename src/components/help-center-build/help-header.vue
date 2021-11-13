@@ -3,14 +3,7 @@
     <div class="container px-3 px-sm-4 px-xl-0">
       <!-- PAGE TITLE -->
       <div class="d-flex flex-column justify-content-center align-items-center">
-        <div
-          class="page-title brand-white font-weight-700 text-center"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-delay="100"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
-        >
+        <div class="page-title brand-white font-weight-700 text-center">
           Hi there, how can we help you?
         </div>
 
@@ -65,7 +58,7 @@ export default {
   .page-title {
     margin: 22vh 0 toRem(50);
     @include font-height(58, 70);
-    width: 40%;
+    width: 50%;
 
     @include breakpoint-down(xl) {
       @include font-height(44, 60);

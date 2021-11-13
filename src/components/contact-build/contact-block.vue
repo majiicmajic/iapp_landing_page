@@ -115,7 +115,7 @@
             <div class="right">
               <div class="title-text">Email</div>
               <div class="description">
-                impactamillionlives2021@gmail.com
+                info@iappworldwide.com
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@
               <div class="title-text">Phone</div>
               <div class="description w-100">
                 <div class="text">
-                  +233-57-580-6379
+                  +44 7956 065706
                 </div>
               </div>
             </div>

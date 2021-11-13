@@ -16,15 +16,30 @@
 
       <div class="row">
         <div class="col-12 col-md-4">
-          <post-card image="extension-one.png" :show_bottom="false" />
+          <post-card
+            image="extension-one.png"
+            title="iDress"
+            description="Sell clothes, shoes and bags on iDress, we are connecting your brands worldwide."
+            :show_bottom="false"
+          />
         </div>
 
         <div class="col-12 col-md-4">
-          <post-card image="extension-two.png" :show_bottom="false" />
+          <post-card
+            image="extension-two.png"
+            title="iMart"
+            description="Let people start shopping their favorite items on your store directly with iMart."
+            :show_bottom="false"
+          />
         </div>
 
         <div class="col-12 col-md-4">
-          <post-card image="extension-three.png" :show_bottom="false" />
+          <post-card
+            image="extension-three.png"
+            title="iLodge"
+            description="Scale up your lodge sales than before when people start booking for lodge with you."
+            :show_bottom="false"
+          />
         </div>
       </div>
     </div>

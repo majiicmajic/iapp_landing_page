@@ -15,12 +15,11 @@
     <!-- BOTTOM CONTENT  -->
     <div class="bottom-content brand-white">
       <!-- TITLE  -->
-      <div class="title text-capitalize">Lorem ipsum dolor</div>
+      <div class="title text-capitalize">{{ title }}</div>
 
       <!-- DESCRIPTION -->
       <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo
-        dignissim.
+        {{ description }}
       </div>
 
       <!-- META INFO  -->
@@ -47,6 +46,15 @@ export default {
 
   props: {
     image: String,
+    title: {
+      type: String,
+      default: "Lorem ipsum dolor",
+    },
+    description: {
+      type: String,
+      default:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo dignissim.",
+    },
     show_bottom: {
       type: Boolean,
       default: true,

@@ -12,7 +12,9 @@
         If you are a car owner, it’s time to scale up your income!
       </div>
 
-      <button class="btn btn-primary">Become Our Partner</button>
+      <a href="#partnerCTA" class="btn btn-primary" style="width: max-content">
+        Become Our Partner
+      </a>
     </div>
   </section>
 </template>

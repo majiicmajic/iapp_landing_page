@@ -18,7 +18,7 @@
             :support="{
               icon: 'icon-phone',
               header_text: 'Call Us',
-              description: '+233 57 580 6379',
+              description: '+44 7956 065706',
               meta_text: ['Monday - Saturday', '9am - 6pm'],
             }"
           />
@@ -29,7 +29,7 @@
             :support="{
               icon: 'icon-email-letter',
               header_text: 'Email Us',
-              description: 'impactamillionlives2021@gmail.com',
+              description: 'info@iappworldwide.com',
               meta_text: ['Always Available'],
             }"
           />

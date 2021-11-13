@@ -12,7 +12,9 @@
         We want your delicious foods on iEat, bring it on.
       </div>
 
-      <button class="btn btn-primary">Become Our Partner</button>
+      <a href="#partnerCTA" class="btn btn-primary" style="width: max-content">
+        Become Our Partner
+      </a>
     </div>
   </section>
 </template>
