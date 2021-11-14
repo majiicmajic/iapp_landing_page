@@ -115,7 +115,7 @@
             <div class="right">
               <div class="title-text">Email</div>
               <div class="description">
-                info@iappworldwide.com
+                support@iappworldwide.com
               </div>
             </div>
           </div>

@@ -61,7 +61,7 @@
         <!-- EMAIL -->
         <div class="link-text-wrapper">
           <div class="icon icon-email-letter" style="top: 2.5px;"></div>
-          <div class="text">info@iappworldwide.com</div>
+          <div class="text">support@iappworldwide.com</div>
         </div>
       </div>
     </div>

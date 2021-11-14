@@ -29,7 +29,7 @@
             :support="{
               icon: 'icon-email-letter',
               header_text: 'Email Us',
-              description: 'info@iappworldwide.com',
+              description: 'support@iappworldwide.com',
               meta_text: ['Always Available'],
             }"
           />

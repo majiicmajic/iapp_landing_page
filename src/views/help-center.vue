@@ -25,7 +25,7 @@
         Still have questions? Contact us via our
         <a href="" class="brand-red link-no-underline">support center</a>
         <br />
-        or email us at info@iappworldwide.com
+        or email us at support@iappworldwide.com
       </div>
     </div>
   </div>

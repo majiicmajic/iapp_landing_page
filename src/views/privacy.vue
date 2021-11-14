@@ -685,11 +685,11 @@
 
           <p>
             Email For Customer Support and correction to your Personal
-            Information: impactamillionlives2021@gmail.com
+            Information: support@iappworldwide.com
           </p>
 
           <p>
-            Call Center For Customer support: +233-57-580-6379
+            Call Center For Customer support: +44 7956 065706
           </p>
         </div>
       </div>

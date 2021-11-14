@@ -117,11 +117,7 @@ export default {
       },
       {
         id: 2,
-        name: "Spanish",
-      },
-      {
-        id: 3,
-        name: "Italian",
+        name: "Arabic",
       },
     ],
 
@@ -137,6 +133,14 @@ export default {
       {
         id: 3,
         name: "Ghana",
+      },
+      {
+        id: 4,
+        name: "Qatar",
+      },
+      {
+        id: 5,
+        name: "UAE",
       },
     ],
   }),

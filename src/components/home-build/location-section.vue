@@ -98,6 +98,10 @@ export default {
     ],
   }),
 
+  mounted() {
+    setInterval(() => this.nextSlide(), 5000);
+  },
+
   methods: {
     nextSlide() {
       this.current_index > 4

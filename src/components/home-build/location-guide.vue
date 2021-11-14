@@ -41,6 +41,7 @@ export default {
 .location-guide {
   @include flex-column-center;
   padding: toRem(40) 0 0;
+  scroll-behavior: smooth;
 
   @include breakpoint-down(lg) {
     padding: toRem(60) 0 0;
