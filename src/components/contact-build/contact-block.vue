@@ -135,17 +135,20 @@
           <!-- SOCIAL  -->
           <div class="social">
             <!-- FACEBOOK -->
-            <a href="" class="icon">
+            <a href="https://www.facebook.com/IAppWorldwide/" class="icon">
               <span class="icon-facebook-fill"></span>
             </a>
 
             <!-- TWITTER -->
-            <a href="" class="icon">
+            <a
+              href="https://m.youtube.com/channel/UCJJoTLbK7u9v-NtPw66cTqQ"
+              class="icon"
+            >
               <span class="icon-twitter"></span>
             </a>
 
             <!-- INSTAGRAM -->
-            <a href="" class="icon">
+            <a href="www.instagram.com/iappworldwide" class="icon">
               <span class="icon-instagram"></span>
             </a>
           </div>

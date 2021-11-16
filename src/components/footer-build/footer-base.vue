@@ -64,24 +64,30 @@
         <!-- SOCIAL COLUMN -->
         <div class="social-column">
           <!-- FACEBOOK  -->
-          <div class="social-circle">
+          <a
+            href="https://www.facebook.com/IAppWorldwide/"
+            class="social-circle"
+          >
             <div class="icon icon-facebook"></div>
-          </div>
+          </a>
 
           <!-- INSTAGRAM  -->
-          <div class="social-circle">
+          <a href="www.instagram.com/iappworldwide" class="social-circle">
             <div class="icon icon-instagram-fill"></div>
-          </div>
+          </a>
 
           <!-- TWITTER  -->
-          <div class="social-circle">
+          <a
+            href="https://m.youtube.com/channel/UCJJoTLbK7u9v-NtPw66cTqQ"
+            class="social-circle"
+          >
             <div class="icon icon-twitter"></div>
-          </div>
+          </a>
 
           <!-- YOUTUBE  -->
-          <div class="social-circle">
+          <a href="https://twitter.com/iAppgh?s=20" class="social-circle">
             <div class="icon icon-youtube"></div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
